@@ -1,0 +1,46 @@
+Zeina Benton
+Log for AST5765, Fall 2026
+
+*****IN: Fri Aug 28 14:50:40 EST 2026
+
+Opened TextEdit, started this log, saved as:
+/home/zeinabenton/Desktop/1-ast5765-zeinabenton.log
+
+Came into class and downloaded anaconda for my Mac. I was able to run it and install it, then opened Jupyter Notebooks.
+
+The next documents to read and look into are learnt, learn shell, and learn python that were uplaoded. 
+
+First trying learngit. Trying https://try.github.io/ tutorial. I read it and I have already downloaded it and have a username (Zeina-benton). I created a repository name AST5765_ZeinaBenton and cloned it with the desktop https://github.com/zeina-benton/AST5765_ZeinaBenton.git.
+
+*****OUT: Fri Aug 28 15:02:28 EST 2026
+
+
+*****IN: Fri Aug 28 15:04:28 EST 2026
+
+Trying commands in my Github repository I made for the course AST5765_ZeinaBenton.
+Tried git init, setting an email, and git status. I realized many of the tutorials need files a such to work with, so I began hw 1.
+
+Following homework 1, I started the questions and opened Jupyter notebooks into my course folder/homework/homework 1 folder to then hit Shift+command+3 to screenshot evidence of it running. I have Python 3 files.
+
+I then following problem 2b, hit Shift+command+3 to screenshot GitHub desktop and showered the repo for the course as stated above. I am still working on the next part, in which a screenshot of git status is needed to be called. I assume I need to go back to other documents to figure this out, as I tried opening ym general folder and typing that and it did not come back correctly.
+
+I figured it out and went to my repo/copied course folder/ moved it to repo folder/ and then opened terminal in said folder. Then ran git init and git status. It said nothing had happened, which makes sense because no files have been added and such.
+
+Stokes is not up or working per today's date, so number 3 will be skipped for the time being.
+
+Then for problem 4, I made the log file a plain text, saved it and correctly labeled it 1-ast5765-zeinabenton.log and then placed in hw1 folder. Then compress the folder to zip it and submit it to Webcourses. Will check back in on 30th or 31st for the Stokes update.
+However, I need to figure out how to make sure the git repo is updating files as I do them (I.e. log isn't updating as I save it).
+
+*****OUT:  Fri Aug 28 15:45:37 EST 2026
+
+
+*****IN: Sun Aug 30 19:55:11 EST 2026
+
+I attempted today to see if Stokes was working in order to answer question 4.
+I was on campus and had to download the UCF VPN Cisco. This ended up being a process in itself, needed the Cisco client to be downloaded and allowed computer use.
+
+I was then able to follow the stoke pdf in Webcourses to then login with the ssh command using my NID and password. Then typing ls which prompts nothing, likely because there are no created folders to view within my current directory in my name. After completing that and logging out and screenshotting (Shift+command+3). I then add that to my course folder within hw1.
+
+Then as mentioned, to finish this I will close out the log, compress the overall hw1 folder to zip it, and then submit it to Webcourses.
+
+*****OUT: Sun Aug 30 19:59:39 EST 2026
