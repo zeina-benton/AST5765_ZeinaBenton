@@ -143,6 +143,8 @@ Closed this log at end of class.
 *****OUT: Wed Sep  2 14:32:29 EST 2026
 
 
+
+
 *****IN: Thu Sep  3 14:23:36 EST 2026
 Opened this log for working on HW2.
 
@@ -154,4 +156,20 @@ mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
 mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
 To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
 
-2) 
+2 - 4) Completed in python file.
+Note: comment for 2a1 says: 1001 elements are needed to included 1000.
+
+Pausing here on homework.
+
+Edit* I made a mistake of opening Jupyter separate and not through Git, therefore I had to move it via terminal following:
+- mv Desktop/AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton.ipynb /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton
+-  mv Desktop/AST5765/Homework/hw2_zeinabenton/hw2_question3b_plot.png  /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton
+- mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_zeinabenton.ipynb /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
+- mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_question3b_plot.png /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
+
+*****OUT:  Thu Sep  3 16:16:35 EST 2026
+
+
+
+
+
