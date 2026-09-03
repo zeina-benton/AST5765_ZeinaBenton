@@ -142,3 +142,16 @@ Closed this log at end of class.
 
 *****OUT: Wed Sep  2 14:32:29 EST 2026
 
+
+*****IN: Thu Sep  3 14:23:36 EST 2026
+Opened this log for working on HW2.
+
+HW2:
+
+1) I opened my terminal and ran 'mkdir hw2_zeinabenton' to create a folder. I then did:
+mv hw2_zeinabenton Desktop/ 
+mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
+mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
+To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
+
+2) 
