@@ -156,8 +156,26 @@ mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
 mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
 To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
 
-2 - 3) Completed in python file.
-Note: comment for 2a1 says: 1001 elements are needed to included 1000.
+2) a1) [   0    1    2 ...  998  999 1000]
+	a2) 0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+
+	1001 elements are needed to included 1000.
+
+   a2) int64
+	0
+ 	1000
+   B1) [0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+   B2) 0.0
+	6.283185307179586
+
+  C) [ 0.00000000e+00  6.28314397e-03  1.25660399e-02 ... -1.25660399e-02
+ -6.28314397e-03 -2.44929360e-16]
+
+  D) 0.9949510169813002
+
+3) Code and an output image saved as hw2_question3b_plot.png
+
+
 
 Pausing here on homework.
 
@@ -171,12 +189,35 @@ Edit* I made a mistake of opening Jupyter separate and not through Git, therefor
 
 
 
+
 *****IN: Fri Sep  4 09:50:33 EST 2026
 Opened this log and resumed work for hw2.
 
 HW2:
 
-4) Answered in python file.
+4) a1)
+	[-1.   -0.98 -0.96 -0.94 -0.92 -0.9  -0.88 -0.86 -0.84 -0.82 -0.8  -0.78
+ -0.76 -0.74 -0.72 -0.7  -0.68 -0.66 -0.64 -0.62 -0.6  -0.58 -0.56 -0.54
+ -0.52 -0.5  -0.48 -0.46 -0.44 -0.42 -0.4  -0.38 -0.36 -0.34 -0.32 -0.3
+ -0.28 -0.26 -0.24 -0.22 -0.2  -0.18 -0.16 -0.14 -0.12 -0.1  -0.08 -0.06
+ -0.04 -0.02  0.    0.02  0.04  0.06  0.08  0.1   0.12  0.14  0.16  0.18
+  0.2   0.22  0.24  0.26  0.28  0.3   0.32  0.34  0.36  0.38  0.4   0.42
+  0.44  0.46  0.48  0.5   0.52  0.54  0.56  0.58  0.6   0.62  0.64  0.66
+  0.68  0.7   0.72  0.74  0.76  0.78  0.8   0.82  0.84  0.86  0.88  0.9
+  0.92  0.94  0.96  0.98  1.  ]
+
+   A2) [-0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5
+ -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5
+ -0.5  -0.5  -0.48 -0.46 -0.44 -0.42 -0.4  -0.38 -0.36 -0.34 -0.32 -0.3
+ -0.28 -0.26 -0.24 -0.22 -0.2  -0.18 -0.16 -0.14 -0.12 -0.1  -0.08 -0.06
+ -0.04 -0.02  0.    0.02  0.04  0.06  0.08  0.1   0.12  0.14  0.16  0.18
+  0.2   0.22  0.24  0.26  0.28  0.3   0.32  0.34  0.36  0.38  0.4   0.42
+  0.44  0.46  0.48  0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5
+  0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5
+  0.5   0.5   0.5   0.5   0.5 ]
+
+   B1) Code and pdf saved as hw2_question4b2_plot.pdf
+
 
 5) 1. Skyfield is a python package that helps computing positions for stars, planets, satellites in orbit around Earth. To use in your code, you would load in your file (I.e. asp) and then simply put the planet (i.e. 'earth' and 'mars') and then earth.at(t).observe(mars) to get the position and it's coordinates. 
 https://rhodesmill.org/skyfield/
@@ -192,8 +233,10 @@ hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
 
 	c)
 
-Will be continued later, I am now in class.
 
+
+
+Will be continued later, I am now in class.
 
 
 
@@ -204,7 +247,7 @@ Will be continued later, I am now in class.
 
 *****IN: Fri Sep  4 14:14:14 EST 2026
 Entered class and started this log.
-
+We are finishing the lecture 4 workbook in Jupyter notebooks.
 
 
 
