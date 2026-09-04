@@ -156,7 +156,7 @@ mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
 mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
 To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
 
-2 - 4) Completed in python file.
+2 - 3) Completed in python file.
 Note: comment for 2a1 says: 1001 elements are needed to included 1000.
 
 Pausing here on homework.
@@ -168,6 +168,24 @@ Edit* I made a mistake of opening Jupyter separate and not through Git, therefor
 - mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_question3b_plot.png /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
 
 *****OUT:  Thu Sep  3 16:16:35 EST 2026
+
+
+
+*****IN: Fri Sep  4 09:50:33 EST 2026
+Opened this log and resumed work for hw2.
+
+HW2:
+
+4) Answered in python file.
+
+5) 1. Skyfield is a python package that helps computing positions for stars, planets, satellites in orbit around Earth. To use in your code, you would load in your file (I.e. asp) and then simply put the planet (i.e. 'earth' and 'mars') and then earth.at(t).observe(mars) to get the position and it's coordinates. 
+https://rhodesmill.org/skyfield/
+
+   2.  PyCBC is a python package designed for gravitational wave astronomy and analysis. The modules within allow for signal processing, filtering, and transforms that work best with LIGO or Virgo data. It was used
+in the firest detection of graviational waves by LIGO.
+https://pycbc.org/
+
+6) Testing code works in Stokes means I must log into Stokes via terminal. First login in with ssh ze493669@stokes.ist.ucf.edu and then entering your password. First, I worked in Jupyter notebook so I ran jupyter nbconvert --to script hw2_zeinabenton.ipynb  in terminal.
 
 
 
