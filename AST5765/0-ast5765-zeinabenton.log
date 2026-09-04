@@ -185,8 +185,25 @@ https://rhodesmill.org/skyfield/
 in the firest detection of graviational waves by LIGO.
 https://pycbc.org/
 
-6) Testing code works in Stokes means I must log into Stokes via terminal. First login in with ssh ze493669@stokes.ist.ucf.edu and then entering your password. First, I worked in Jupyter notebook so I ran jupyter nbconvert --to script hw2_zeinabenton.ipynb  in terminal.
+6) Testing code works in Stokes means I must log into Stokes via terminal. First login in with ssh ze493669@stokes.ist.ucf.edu and then entering your password. First, I worked in Jupyter notebook so I ran jupyter nbconvert --to script hw2_zeinabenton.ipynb  in terminal. Now with it as a python file and update with my Github, now on to:
+	a) Stokes login: Terminal then ssh ze493669@stokes.ist.ucf.edu and then entering your password
+	b) I did 'mkdir hw2_zeinabenton' and ran ls:
+hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
 
+	c)
+
+Will be continued later, I am now in class.
+
+
+
+
+*****OUT: Fri Sep  4 14:11:14 EST 2026
+
+
+
+
+*****IN: Fri Sep  4 14:14:14 EST 2026
+Entered class and started this log.
 
 
 
