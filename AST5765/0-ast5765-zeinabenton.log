@@ -156,14 +156,14 @@ mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
 mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
 To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
 
-2) a1) [   0    1    2 ...  998  999 1000]
+2) a1) [   0.    1.    2. ...  998.  999. 1000.]
 	a2) 0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
 
 	1001 elements are needed to included 1000.
 
    a2) int64
-	0
- 	1000
+	0.0
+ 	1000.0
    B1) [0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
    B2) 0.0
 	6.283185307179586
@@ -231,8 +231,6 @@ https://pycbc.org/
 	b) I did 'mkdir hw2_zeinabenton' and ran ls:
 hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
 
-	c)
-
 
 
 
@@ -248,6 +246,6 @@ Will be continued later, I am now in class.
 *****IN: Fri Sep  4 14:14:14 EST 2026
 Entered class and started this log.
 We are finishing the lecture 4 workbook in Jupyter notebooks.
-
+Went over homework formatting.
 
 

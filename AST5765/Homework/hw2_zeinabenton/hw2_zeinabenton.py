@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[18]:
 
 
 #Zeina Benton
@@ -22,7 +22,7 @@
 # d) Print the value of element 234 of y [Note the difference between the 234th
 # element and element 234 in Python!].
 
-# In[2]:
+# In[19]:
 
 
 import numpy as np
@@ -32,16 +32,16 @@ import math
 import time
 
 
-# In[3]:
+# In[20]:
 
 
 #2a1
 
-x = np.arange(0,1001)
+x = np.arange(0. ,1001.)
 print(x) #1001 elements are needed to included 1000.
 
 
-# In[ ]:
+# In[21]:
 
 
 #2a2
@@ -51,16 +51,16 @@ print(np.min(x))
 print(np.max(x))
 
 
-# In[5]:
+# In[22]:
 
 
 #2b1
 
-x = (x - np.min(x)) / (np.max(x) - np.min(x)) * (2 * np.pi)
+x = (x - np.min(x)) / (np.max(x) - np.min(x)) * (2. * np.pi)
 print(x)
 
 
-# In[6]:
+# In[23]:
 
 
 #2b2
@@ -69,7 +69,7 @@ print(np.min(x))
 print(np.max(x))
 
 
-# In[7]:
+# In[24]:
 
 
 #2c
@@ -78,7 +78,7 @@ y = np.sin(x)
 print(y)
 
 
-# In[8]:
+# In[25]:
 
 
 #2d
@@ -92,7 +92,7 @@ print(y[234])
 # b) (5 points) Save your plot as a PNG using the appropriate Python commands (no
 # screenshots or window dumps from outside Python).
 
-# In[9]:
+# In[26]:
 
 
 #3a
@@ -123,16 +123,16 @@ plt.savefig("hw2_question3b_plot.png")
 # b2) Use the appropriate python command to save the plot as a PDF. Name the
 # PDF appropriately.
 
-# In[10]:
+# In[32]:
 
 
 #4a1
 
-r = np.linspace(-1, 1, 101)
+r = np.linspace(-1., 1., 101)
 print(r)
 
 
-# In[11]:
+# In[28]:
 
 
 #4a2
@@ -141,7 +141,7 @@ r_clipped = np.clip(r, -0.5, 0.5)
 print(r_clipped)
 
 
-# In[12]:
+# In[29]:
 
 
 #4b1
@@ -165,7 +165,7 @@ plt.savefig("hw2_question4b2_plot.pdf")
 # in your own words. Put the two paragraphs as an extended string (between sets of triple
 # single-quotes) in your main homework file.
 
-# In[13]:
+# In[30]:
 
 
 #Question 5 is answered in also written in log.
