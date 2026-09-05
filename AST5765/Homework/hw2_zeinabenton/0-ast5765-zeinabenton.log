@@ -1,0 +1,296 @@
+Zeina Benton
+Log for AST5765, Fall 2026
+*****IN: Wed Aug 26 15:11:03 EST 2026
+Opened TextEdit, started this log, saved as:
+/home/zeinabenton/Desktop/0-ast5765-zeinabenton.log
+
+Name: Zeina Benton
+Username: zeinabenton
+What astronomy classes have you taken
+I have taken numerous different astronomy classes as my undergraduate degree was astrophysics (i.e. observation astronomy data analysis).
+
+Are you generally comfortable with calculus and physics?
+Yes
+
+Have you ever programmed a computer?
+No I haven’t programmed a computer, I program in Python in a computer.
+
+In what language(s)?
+Refer to above question.
+
+Have you taken a programming class, and if so which?
+No not formally, I am research self-taught.
+
+Have you taken statistics or probability?
+No
+
+Will you be attending the DPS conference this year, or will
+you be away otherwise?
+I am unsure currently, depends on my PhD advisor.
+
+Why are you taking this course?
+As a PhD requirement and to better my programming skills.
+
+Are there particular topics you hope to learn?
+Any skills beyond my current knowledge of observational astronomy.
+
+If you have programmed outside of a course before, please
+briefly describe:
+I have coded in my stellar astrophysics research, investigating the evolution and structure of NGC 2264.
+
+If you have worked with scientific data before, briefly
+describe your experience:
+I have worked with large data sets such as 2MASS and Gaia for star catalogues.
+
+Please describe any projects in astronomy, including
+involvement in amateur groups, owning a telescope,
+research, etc.:
+As stated above, I have worked on smaller telescopes in an observational astronomy class and outside of classwork, I researched star clusters. Additionally, I was in an astrophotography course.
+
+Steps in log:
+I will enter my course folder labeled AST5765, enter Homework folder, and start a folder labeled hw0_zeinabenton (number changes with each assignment). Then open a textedit (Mac) file in said folder named 0-ast5765-zeinabenton.log (ensure that the file is 'save as plain text for a txt file). Then zip (compress the folder) the folder with the file and submit it.
+
+*****OUT: Wed Aug 26 15:17:00 EST 2026
+
+
+
+
+
+*****IN: Fri Aug 28 14:50:40 EST 2026
+
+Opened TextEdit, started this log, saved as:
+/home/zeinabenton/Desktop/1-ast5765-zeinabenton.log
+
+Came into class and downloaded anaconda for my Mac. I was able to run it and install it, then opened Jupyter Notebooks.
+
+The next documents to read and look into are learnt, learn shell, and learn python that were uplaoded. 
+
+First trying learngit. Trying https://try.github.io/ tutorial. I read it and I have already downloaded it and have a username (Zeina-benton). I created a repository name AST5765_ZeinaBenton and cloned it with the desktop https://github.com/zeina-benton/AST5765_ZeinaBenton.git.
+
+*****OUT: Fri Aug 28 15:02:28 EST 2026
+
+
+*****IN: Fri Aug 28 15:04:28 EST 2026
+
+Trying commands in my Github repository I made for the course AST5765_ZeinaBenton.
+Tried git init, setting an email, and git status. I realized many of the tutorials need files a such to work with, so I began hw 1.
+
+Following homework 1, I started the questions and opened Jupyter notebooks into my course folder/homework/homework 1 folder to then hit Shift+command+3 to screenshot evidence of it running. I have Python 3 files.
+
+I then following problem 2b, hit Shift+command+3 to screenshot GitHub desktop and showered the repo for the course as stated above. I am still working on the next part, in which a screenshot of git status is needed to be called. I assume I need to go back to other documents to figure this out, as I tried opening ym general folder and typing that and it did not come back correctly.
+
+I figured it out and went to my repo/copied course folder/ moved it to repo folder/ and then opened terminal in said folder. Then ran git init and git status. It said nothing had happened, which makes sense because no files have been added and such.
+
+Stokes is not up or working per today's date, so number 3 will be skipped for the time being.
+
+Then for problem 4, I made the log file a plain text, saved it and correctly labeled it 1-ast5765-zeinabenton.log and then placed in hw1 folder. Then compress the folder to zip it and submit it to Webcourses. Will check back in on 30th or 31st for the Stokes update.
+However, I need to figure out how to make sure the git repo is updating files as I do them (I.e. log isn't updating as I save it).
+
+*****OUT:  Fri Aug 28 15:45:37 EST 2026
+
+
+*****IN: Sun Aug 30 19:55:11 EST 2026
+
+I attempted today to see if Stokes was working in order to answer question 4.
+I was on campus and had to download the UCF VPN Cisco. This ended up being a process in itself, needed the Cisco client to be downloaded and allowed computer use.
+
+I was then able to follow the stoke pdf in Webcourses to then login with the ssh command using my NID and password. Then typing ls which prompts nothing, likely because there are no created folders to view within my current directory in my name. After completing that and logging out and screenshotting (Shift+command+3). I then add that to my course folder within hw1.
+
+Then as mentioned, to finish this I will close out the log, compress the overall hw1 folder to zip it, and then submit it to Webcourses.
+
+*****OUT: Sun Aug 30 19:59:39 EST 2026
+
+
+
+
+
+*****IN:  Mon Aug 31 14:25:27 EST 2026
+Entered class and started this log. [LECTURE DAY]
+
+Logged into stokes via ssh ze493669@stokes.ist.ucf.edu. We followed a demo/lecture in class.
+- Mkdir: make a directory
+- ls or ls -lFs or ls -l etc...: list folders/files or show hidden files whether in time order or reverse order, there are many options.
+- cd : change directory
+- scp: secure copy, allows copying to other computers
+- cd .. : changes directory for actions such as scp prompts that are done in original directory to then go back to stokes
+- rm: removing files
+- !$ : last done command
+- ls f*: starts with f, "wild card"
+- touch: creates a file and make it our current date
+- cat: reading files
+- cat ....... > longer.txt: puts cat file in listed other file
+- less: view file content without opening with cat
+- file: list types of files you have
+- file.. *: describes type of file and the files type inside it
+- wc: wordcount via lines/words/characters
+- man: offers manual of any command listed after
+-chmod: changes directory permissions
+
+
+*****OUT:  Mon Aug 31 15:09:25 EST 2026
+
+
+
+
+*****IN: Wed Sep  2 14:27:14 EST 2026
+Opened this log for lecture 4 (W).
+
+We are practicing work in Python_functions_coding_style_F25-classroom-work.py file.
+* .T = transpose
+
+Closed this log at end of class.
+
+*****OUT: Wed Sep  2 14:32:29 EST 2026
+
+
+
+
+*****IN: Thu Sep  3 14:23:36 EST 2026
+Opened this log for working on HW2.
+
+HW2:
+
+1) I opened my terminal and ran 'mkdir hw2_zeinabenton' to create a folder. I then did:
+mv hw2_zeinabenton Desktop/ 
+mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
+mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
+To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
+
+2) a1) [   0.    1.    2. ...  998.  999. 1000.]
+	a2) 0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+
+	1001 elements are needed to included 1000.
+
+   a2) int64
+	0.0
+ 	1000.0
+   B1) [0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+   B2) 0.0
+	6.283185307179586
+
+  C) [ 0.00000000e+00  6.28314397e-03  1.25660399e-02 ... -1.25660399e-02
+ -6.28314397e-03 -2.44929360e-16]
+
+  D) 0.9949510169813002
+
+3) Code and an output image saved as hw2_question3b_plot.png
+
+
+
+Pausing here on homework.
+
+Edit* I made a mistake of opening Jupyter separate and not through Git, therefore I had to move it via terminal following:
+- mv Desktop/AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton.ipynb /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton
+-  mv Desktop/AST5765/Homework/hw2_zeinabenton/hw2_question3b_plot.png  /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton
+- mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_zeinabenton.ipynb /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
+- mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_question3b_plot.png /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
+
+*****OUT:  Thu Sep  3 16:16:35 EST 2026
+
+
+
+
+*****IN: Fri Sep  4 09:50:33 EST 2026
+Opened this log and resumed work for hw2.
+
+HW2:
+
+4) a1)
+	[-1.   -0.98 -0.96 -0.94 -0.92 -0.9  -0.88 -0.86 -0.84 -0.82 -0.8  -0.78
+ -0.76 -0.74 -0.72 -0.7  -0.68 -0.66 -0.64 -0.62 -0.6  -0.58 -0.56 -0.54
+ -0.52 -0.5  -0.48 -0.46 -0.44 -0.42 -0.4  -0.38 -0.36 -0.34 -0.32 -0.3
+ -0.28 -0.26 -0.24 -0.22 -0.2  -0.18 -0.16 -0.14 -0.12 -0.1  -0.08 -0.06
+ -0.04 -0.02  0.    0.02  0.04  0.06  0.08  0.1   0.12  0.14  0.16  0.18
+  0.2   0.22  0.24  0.26  0.28  0.3   0.32  0.34  0.36  0.38  0.4   0.42
+  0.44  0.46  0.48  0.5   0.52  0.54  0.56  0.58  0.6   0.62  0.64  0.66
+  0.68  0.7   0.72  0.74  0.76  0.78  0.8   0.82  0.84  0.86  0.88  0.9
+  0.92  0.94  0.96  0.98  1.  ]
+
+   A2) [-0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5
+ -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5
+ -0.5  -0.5  -0.48 -0.46 -0.44 -0.42 -0.4  -0.38 -0.36 -0.34 -0.32 -0.3
+ -0.28 -0.26 -0.24 -0.22 -0.2  -0.18 -0.16 -0.14 -0.12 -0.1  -0.08 -0.06
+ -0.04 -0.02  0.    0.02  0.04  0.06  0.08  0.1   0.12  0.14  0.16  0.18
+  0.2   0.22  0.24  0.26  0.28  0.3   0.32  0.34  0.36  0.38  0.4   0.42
+  0.44  0.46  0.48  0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5
+  0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5
+  0.5   0.5   0.5   0.5   0.5 ]
+
+   B1) Code and pdf saved as hw2_question4b2_plot.pdf
+
+
+5) 1. Skyfield is a python package that helps computing positions for stars, planets, satellites in orbit around Earth. To use in your code, you would load in your file (I.e. asp) and then simply put the planet (i.e. 'earth' and 'mars') and then earth.at(t).observe(mars) to get the position and it's coordinates. 
+https://rhodesmill.org/skyfield/
+
+   2.  PyCBC is a python package designed for gravitational wave astronomy and analysis. The modules within allow for signal processing, filtering, and transforms that work best with LIGO or Virgo data. It was used
+in the firest detection of graviational waves by LIGO.
+https://pycbc.org/
+
+6) Testing code works in Stokes means I must log into Stokes via terminal. First login in with ssh ze493669@stokes.ist.ucf.edu and then entering your password. First, I worked in Jupyter notebook so I ran jupyter nbconvert --to script hw2_zeinabenton.ipynb  in terminal. Now with it as a python file and update with my Github, now on to:
+	a) Stokes login: Terminal then ssh ze493669@stokes.ist.ucf.edu and then entering your password
+	b) I did 'mkdir hw2_zeinabenton' and ran ls:
+hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
+
+
+
+
+Will be continued later, I am now in class.
+
+*****OUT: Fri Sep  4 14:11:14 EST 2026
+
+
+
+
+*****IN: Fri Sep  4 14:14:14 EST 2026
+Entered class and started this log.
+We are finishing the lecture 4 workbook in Jupyter notebooks.
+Went over homework formatting.
+
+
+*****OUT: Fri Sep  4 14:40:10 EST 2026
+
+
+
+
+*****IN:  Sat Sep  5 14:48:14 EST 2026
+Opened this log to resume hw 2 question 6, part c.
+
+6) c) After making the folder in stokes (part b), I was able to copy my local repo folder to stokes in terminal by:
+ 	scp /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton.py ze493669@stokes.ist.ucf.edu:~
+Where -r is not needing after scp because it's a single file.
+Then I moved that file to the hw2_zeinabenton stoles folder by:
+	mv hw2_zeinabenton.py hw2_zeinabenton/
+
+
+   D) an and b) For testing, I typed 'python hw2_zeinabenton/hw2_zeinabenton.py'. I got a traceback saying error no module named dumpy. I then did 'python -m pip install --user numpy' because stokes doesn't seem to like pip install numpy here. Then I tried the same command to run python, and got 'OpenBLAS blas_thread_init:' errors. After troubleshooting, I tried 'export OPENBLAS_NUM_THREADS=1' to keep it to one thread, and then ran python again. Then I ran into a pandas and matplotlib error, and did the same installation process. I then got an error that I am in an outdated python version, and it turns out stokes automates to Python 2.7.18 and I needed Python 3.11.4 in Python3 - so I corrected for this by 'python3 -m pip install --user matplotlib' and 'python3 hw2_zeinabenton/hw2_zeinabenton.py'. Now it runs!
+	Example: [   0.    1.    2. ...  998.  999. 1000.]
+float64
+0.0
+1000.0
+[0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+0.0
+6.283185307179586
+
+
+	e) I have been committing and pushing into Github via my desktop program by pressing the button and having it update. This instruction is unclear to me if this refers to that or making another directory to the same repo in stokes. So if this refers to IN stokes, I did ' git clone https://github.com/zeina-benton/AST5765_ZeinaBenton.git' to clone the repo here. Now I have after ls:
+	AST5765_ZeinaBenton  hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
+So now as I already mentioned I keep GitHub updated, when look into ls and use git status, it says it is up to date. Stokes and Github now have the same structure of AST6765/Homework/hw2_zeinabenton and contains the png/pdf/py files.
+
+	f) Screenshot is labeled hw2_zeinabenton_problem6f_screenshot1.png.
+	g)Now to update stokes with the screenshot, I had to do 'cd ~/AST5765_ZeinaBenton' and then 'git pull' to pull the updates contents (my screenshot) into stokes. Now after 'cd hw2_zeinabenton' I can see: hw2_question3b_plot.png  hw2_question4b2_plot.pdf  hw2_zeinabenton_problem6f_screenshot1.png  hw2_zeinabenton.py, after I did 'cp AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton_problem6f_screenshot1.png ~/hw2_zeinabenton/'.
+
+	h) a) Now following a similar process, I will (once this log is done) do:
+	git pull
+	cp AST5765/Homework/hw2_zeinabenton/0-ast5765-zeinabenton.log ~/hw2_zeinabenton/
+	cd hw2_zeinabenton
+	ls
+	   b) Then in stokes folder hw2_zeinabenton:
+		tar zcf hw2_zeinabenton.tar.gz hw2_zeinabenton
+		cp ~/hw2_zeinabenton/hw2_zeinabenton.tar.gz ~/AST5765_ZeinaBenton/Handin/
+		And submit! It'll be in GitHub seen.
+
+
+
+*****OUT: Sat Sep  5 15:10:09 EST 2026
+ 
+
