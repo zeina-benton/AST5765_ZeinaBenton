@@ -277,7 +277,20 @@ float64
 So now as I already mentioned I keep GitHub updated, when look into ls and use git status, it says it is up to date. Stokes and Github now have the same structure of AST6765/Homework/hw2_zeinabenton and contains the png/pdf/py files.
 
 	f) Screenshot is labeled hw2_zeinabenton_problem6f_screenshot1.png.
-	g)
+	g)Now to update stokes with the screenshot, I had to do 'cd ~/AST5765_ZeinaBenton' and then 'git pull' to pull the updates contents (my screenshot) into stokes. Now after 'cd hw2_zeinabenton' I can see: hw2_question3b_plot.png  hw2_question4b2_plot.pdf  hw2_zeinabenton_problem6f_screenshot1.png  hw2_zeinabenton.py, after I did 'cp AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton_problem6f_screenshot1.png ~/hw2_zeinabenton/'.
 
+	h) a) Now following a similar process, I will (once this log is done) do:
+	git pull
+	cp AST5765/Homework/hw2_zeinabenton/0-ast5765-zeinabenton.log ~/hw2_zeinabenton/
+	cd hw2_zeinabenton
+	ls
+	   b) Then in stokes folder hw2_zeinabenton:
+		tar zcf hw2_zeinabenton.tar.gz hw2_zeinabenton
+		cp ~/hw2_zeinabenton/hw2_zeinabenton.tar.gz ~/AST5765_ZeinaBenton/Handin/
+		And submit! It'll be in GitHub seen.
+
+
+
+*****OUT: Sat Sep  5 15:10:09 EST 2026
  
 
