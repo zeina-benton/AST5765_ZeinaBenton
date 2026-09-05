@@ -281,12 +281,12 @@ So now as I already mentioned I keep GitHub updated, when look into ls and use g
 
 	h) a) Now following a similar process, I will (once this log is done) do:
 	git pull
-	cp AST5765/Homework/hw2_zeinabenton/0-ast5765-zeinabenton.log ~/hw2_zeinabenton/
+	cp AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/0-ast5765-zeinabenton.log ~/hw2_zeinabenton/
 	cd hw2_zeinabenton
 	ls
-	   b) Then in stokes folder hw2_zeinabenton:
+	   b) Then in stokes:
 		tar zcf hw2_zeinabenton.tar.gz hw2_zeinabenton
-		cp ~/hw2_zeinabenton/hw2_zeinabenton.tar.gz ~/AST5765_ZeinaBenton/Handin/
+		cp hw2_zeinabenton.tar.gz ~/AST5765_ZeinaBenton/Handin/
 		And submit! It'll be in GitHub seen.
 
 
