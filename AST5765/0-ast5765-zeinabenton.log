@@ -236,8 +236,6 @@ hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
 
 Will be continued later, I am now in class.
 
-
-
 *****OUT: Fri Sep  4 14:11:14 EST 2026
 
 
@@ -248,4 +246,37 @@ Entered class and started this log.
 We are finishing the lecture 4 workbook in Jupyter notebooks.
 Went over homework formatting.
 
+
+*****OUT: Fri Sep  4 14:40:10 EST 2026
+
+
+
+
+*****IN:  Sat Sep  5 14:48:14 EST 2026
+Opened this log to resume hw 2 question 6, part c.
+
+6) c) After making the folder in stokes (part b), I was able to copy my local repo folder to stokes in terminal by:
+ 	scp /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton.py ze493669@stokes.ist.ucf.edu:~
+Where -r is not needing after scp because it's a single file.
+Then I moved that file to the hw2_zeinabenton stoles folder by:
+	mv hw2_zeinabenton.py hw2_zeinabenton/
+
+
+   D) an and b) For testing, I typed 'python hw2_zeinabenton/hw2_zeinabenton.py'. I got a traceback saying error no module named dumpy. I then did 'python -m pip install --user numpy' because stokes doesn't seem to like pip install numpy here. Then I tried the same command to run python, and got 'OpenBLAS blas_thread_init:' errors. After troubleshooting, I tried 'export OPENBLAS_NUM_THREADS=1' to keep it to one thread, and then ran python again. Then I ran into a pandas and matplotlib error, and did the same installation process. I then got an error that I am in an outdated python version, and it turns out stokes automates to Python 2.7.18 and I needed Python 3.11.4 in Python3 - so I corrected for this by 'python3 -m pip install --user matplotlib' and 'python3 hw2_zeinabenton/hw2_zeinabenton.py'. Now it runs!
+	Example: [   0.    1.    2. ...  998.  999. 1000.]
+float64
+0.0
+1000.0
+[0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+0.0
+6.283185307179586
+
+
+	e) I have been committing and pushing into Github via my desktop program by pressing the button and having it update. This instruction is unclear to me if this refers to that or making another directory to the same repo in stokes. So if this refers to IN stokes, I did ' git clone https://github.com/zeina-benton/AST5765_ZeinaBenton.git' to clone the repo here. Now I have after ls:
+	AST5765_ZeinaBenton  hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
+So now as I already mentioned I keep GitHub updated, when look into ls and use git status, it says it is up to date. Stokes and Github now have the same structure of AST6765/Homework/hw2_zeinabenton and contains the png/pdf/py files.
+
+	f) Screenshot is labeled 
+
+ 
 
