@@ -309,3 +309,108 @@ Q: Classify errors:  systematic, illegitimate, random / 3 examples: illegitimate
 
 
 *****OUT:  Wed Sep  9 14:46:46 EST 2026
+
+
+
+
+
+*****IN: Fri Sep 11 14:38:15 EST 2026
+Opened log in class. Finishing Wednesday's lecture and then went over hw2.
+
+
+With last 20 minutes we worked on practicum assignment:
+import numpy as np
+import matplotlib.pyplot as plt
+
+#1a and 1c (no loop)
+array = np.zeros((300, 200), dtype = np.float64) + np.arange(200)
+
+#1b (loop)
+for x in range(300):
+    for y in range(200):
+        array [x,y] = y
+
+#1d
+plt.imshow(array, cmap = 'gray')
+plt.gca().invert_yaxis()
+
+#1e
+rand_x = np.random.randint(0, 300, size=5)
+rand_y = np.random.randint(0, 200, size=5)
+
+values = array[rand_x, rand_y]
+print("Output:" , values)
+
+rand_x1 = np.random.randint(0, 300, size=5)
+rand_y1 = np.random.randint(0, 200, size=5)
+
+values1 = array[rand_x1, rand_y1]
+print("Output:" , values1)
+    
+Output: [168. 111.   4. 106. 142.]
+Output: [106.  95.  94.   5. 179.]
+
+
+#2 Using ChatGPT
+To AI I said :Make a 300×200 Float64 array. Each array element should contain its own
+x coordinate, starting with x = 0 for column 0 and ending with x = 299 for
+column 299 (i.e., column 0 has 200 zeros).
+▪ How do you do that with a loop?
+▪ How do you do that without any loops?
+▪ Display the array using the matplotlib function for showing the image with
+a cmap of ‘gray’.
+▪ Examine several randomly placed array elements with Python to be sure
+the values match the y coordinate in the print statements. Be careful that
+the final array has the correct data type.
+
+Then it outputted code such as:
+
+	With loop
+import numpy as np
+import matplotlib.pyplot as plt
+
+a = np.zeros((200, 300), dtype=np.float64)
+
+for x in range(300):
+    a[:, x] = x
+
+print(a.shape)
+print(a.dtype)
+
+
+	No loop
+a = np.arange(300, dtype=np.float64)
+a = np.tile(a, (200, 1))
+
+	Then for the image show
+plt.imshow(a, cmap='gray')
+plt.show()
+
+
+
+	For checking, it said:
+import random
+
+for i in range(5):
+    x = random.randint(0, 299)
+    y = random.randint(0, 199)
+
+    print("x =", x, "y =", y, "array value =", a[y, x])
+
+
+Then I said to AI: For the image show, what are the y and x axis. Make sure it has 0 starting for y axis. Output the image array to me here.
+Then it said to me:
+plt.imshow(a, cmap='gray', origin='upper')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.xticks([0, 50, 100, 150, 200, 250, 299])
+plt.yticks([0, 50, 100, 150, 199])
+plt.show()
+
+#3
+import astropy.io.fits as fits
+im = fits.getdata('m42_40min_ir.zip') 
+plt.imshow(im, cmap = 'gray')
+
+*****OUT: 
+
