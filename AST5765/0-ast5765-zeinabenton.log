@@ -409,8 +409,12 @@ plt.show()
 
 #3
 import astropy.io.fits as fits
+
 im = fits.getdata('m42_40min_ir.zip') 
 plt.imshow(im, cmap = 'gray')
 
-*****OUT: 
+
+Not finished! Class ended.
+
+*****OUT:  Fri Sep 11 16:03:03 EST 2026
 
