@@ -13,7 +13,6 @@ import astropy.io.fits as fits
 #from my_module import my_func, other_func
 #then write your functions
 
-
 def square(var1) :
     """
     square takes as input a scalar or array of any dimension or numerical type and
@@ -46,4 +45,53 @@ def square(var1) :
     return squared
 
     
+
+def squareplot(var1, var2, n, saveplot=False) :
+    """
+    Squareplot is to plot the squares of numbers.
+
+    Works with definition square to plot the squares of numbers.
+
+    Parameters
+    ----------
+    var1 : array_like
+        Low numbers to be squared and plotted.  
+
+    var2 : array_like
+        High numbers to be squared and plotted.
+
+    n: int
+        Number of points to be plotted.
+
+    Optional Parameters
+    ----------
+    saveplot : string, optional
+        If True, saves the plot as a PDF file. Default is False.
+    
+    Returns
+    -------
+    None
+
+    Examples
+    -----
+    >>> squareplot(5, 10, 100)
+    >>> squareplot(5, 10, 100, 'hw3_zeinabenton_squareplot.pdf')
+    Plot
+
+    """
+    x = np.linspace(var1, var2, n)
+    y = square(x)
+
+    plt.plot(x, y)
+    plt.xlabel('Input')
+    plt.ylabel('Output')
+    plt.title('Square Function')
+    if saveplot is not False:
+        plt.savefig(saveplot, format='pdf')
+
+    plt.show()
+
+
+    
+
 
