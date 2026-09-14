@@ -846,6 +846,36 @@ squareplot(1, 7, 5, saveplot='hw3_zeinabenton_squareplot.pdf')
 This question is completed it hw3_zeinabenton_problem4.txt in hw3_zeinabenton folder.
 
 
+5) a) logged into stokes via ssh ze493669@stokes.ist.ucf.edu and password.
+ B) mkdir hw3_zeinabenton to make folder.
+ C) I had to do git pull to update my stokes git hub repo.
+	Then I did: 
+cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/hw3_zeinabenton_support_functions.py hw3_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/hw3_zeinabenton.py hw3_zeinabenton
+
+And now both py files are in stokes folder.
+
+ D) Then to test, I did  python3 hw3_zeinabenton.py
+	- got numpy error, did  python3 -m pip install --user numpy
+ 	- then  python3 -m pip install --user scipy
+	- then  export OPENBLAS_NUM_THREADS=1
+	- then python3 -m pip install --user matplotlib
+	- python3 -m pip install --user astropy
+ Now it runs! 25
+[  16 3481 4489]
+[ 0  1  4  9 16 25 36 49 64 81]
+[[  0.   1.   4.   9.  16.]
+ [ 25.  36.  49.  64.  81.]
+ [100. 121. 144. 169. 196.]
+ [225. 256. 289. 324. 361.]
+ [400. 441. 484. 529. 576.]]
+
+Then I do
+
+E) Everything is up to date in GitHub for me as previously described.
+F) Screenshot png 'hw3_zeinabenton_problem5f_screenshot1.png' is the ss for GitHub logging history.
+
+
 
 
 
