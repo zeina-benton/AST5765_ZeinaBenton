@@ -1,0 +1,31 @@
+#Zeina Benton
+#HW3, Q4
+#9/14/26
+
+Rubric:
+
+Q1 ) 0 , 3, 5 points
+	- Was the file submitted / labeled correctly? 0.5 points
+	- Was the file in py form and commented at the top? 0.5 points
+	- Was the template edited accordingly for the definition requested and the file labeled right? 2 points
+	- In the function, is the definition labeled correctly and have correct variables/ definition/ explanations? 2 points
+
+Q2 ) 0 , 5, 10 points
+	- Does the function contain 3 conditions and described as stated? 1 point
+	- Does the function contain saveplot=False condition and described within function? 0.5 points
+	- Does the function contain lines needed to call the square function and plot it? 5 points
+	- Does the function include the condition if a pdf is called? 1 points
+	- Does the function output a plot and is the plot saved correctly? 1 points
+	- Does the function have axes/ title labeled correctly? 0.5 points
+	- Does the function NOT haven a hardcoded pdf name? 0.5 points
+	- Are there examples listed in the function? 0.5 points
+
+Q3 ) 0 , 3, 5 points
+	- Does the function work/ if not are errors described? 1 point
+	- Is there an example for square plot in the main py file and works? 2 points
+	- Is the pdf in the hw3 folder of the outputted plot? 1 point
+	- Is the pdf named correctly? 0.5 points
+	- Is the log up to date with the code? 0.5 points
+
+
+

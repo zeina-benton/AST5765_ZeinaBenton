@@ -825,6 +825,30 @@ Stopping now.
 *****OUT: Mon Sep 14 10:23:33 EST 2026
 
 
+*****IN: Mon Sep 14 11:27:07 EST 2026
+Opened hw3, finished Q3.
+
+3) continued for testing the definition. 
+I ran
+ n = np.array([1, 2.5, 4, 5.5, 7])
+squareplot(n, n, 5, saveplot=True)
+
+And received error : ValueError: fname must be a PathLike or file handle
+ - Turns out the issue is from me doing True and it expects a name since I don't have a default pdf name.
+
+When fixing it, the plot appears to be empty. It turns out I did not need to make a separate array.
+
+squareplot(1, 7, 5, saveplot='hw3_zeinabenton_squareplot.pdf')
+- Works and plots a curved line.
+
+
+4) Make a rubric for problem 3.
+This question is completed it hw3_zeinabenton_problem4.txt in hw3_zeinabenton folder.
+
+
+
+
+
 
 
 
