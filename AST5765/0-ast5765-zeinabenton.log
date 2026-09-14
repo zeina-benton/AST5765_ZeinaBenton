@@ -754,6 +754,75 @@ Pausing hw3 for now at #2h.
 
 
 
+*****IN:  Mon Sep 14 09:52:38 EST 2026
+Opened log before first class to continue hw3.
+
+	2h) test_square_1 = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(square(test_square_1))
+	Output: [ 0  1  4  9 16 25 36 49 64 81]
+
+	i) test_square_2 = np.arange(25, dtype=float).reshape(5, 5)
+print(square(test_square_2))
+	Output: [[  0.   1.   4.   9.  16.]
+ [ 25.  36.  49.  64.  81.]
+ [100. 121. 144. 169. 196.]
+ [225. 256. 289. 324. 361.]
+ [400. 441. 484. 529. 576.]]
+
+
+3)I wrote:
+def squareplot(var1, var2, n, saveplot=False) :
+    """
+    Squareplot is to plot the squares of numbers.
+
+    Works with definition square to plot the squares of numbers.
+
+    Parameters
+    ----------
+    var1 : array_like
+        Low numbers to be squared and plotted.  
+
+    var2 : array_like
+        High numbers to be squared and plotted.
+
+    n: int
+        Number of points to be plotted.
+
+    Optional Parameters
+    ----------
+    saveplot : string, optional
+        If True, saves the plot as a PDF file. Default is False.
+    
+    Returns
+    -------
+    None
+
+    Examples
+    -----
+    >>> squareplot(5, 10, 100)
+    >>> squareplot(5, 10, 100, 'hw3_zeinabenton_squareplot.pdf')
+    Plot
+
+    """
+    x = np.linspace(var1, var2, n)
+    y = square(x)
+
+    plt.plot(x, y)
+    plt.xlabel('Input')
+    plt.ylabel('Output')
+    plt.title('Square Function')
+    if saveplot is not False:
+        plt.savefig(saveplot, format='pdf')
+
+    plt.show()
+
+Then committed to GitHub by:
+Git status
+Git add .
+Git commit -m "hw3 update code"
+Git push
+
+
 
 
 
