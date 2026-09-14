@@ -891,7 +891,46 @@ I) copy would be cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/0-ast57
 
 
 
+*****IN: Mon Sep 14  14:46:44 EST 2026
 
+Opened log for class. Finishing lecture workbook.
+
+Continuous probability - can't be halves its either is or not
+
+What is the probability that you get heads in a fair coin toss? What is p9x)?
+	50 %, a Dirac delta function
+What is the probability that you get a 2 in a fair die roll?
+	1/6, =1
+
+ICA :
+#discrete prob.
+
+import numpy as np
+dice = np.array([ 3, 1, 3, 2, 5, 6, 1, 4, 5, 6, 2, 6, 3, 1, 4, 3, 1, 6 ])
+
+mean = np.mean(dice)
+median = np.median(dice)
+
+
+prob = ((1/6)*np.sum(np.arange(1,7)))
+
+print("This is mean, median, probability, respectively:", mean, median, prob)
+
+	This is mean, median, probability, respectively: 3.4444444444444446 3.0 3.5
+
+Now in Error analysis-F25-classroom:
+Gaussian : 1/ sqrt(2 *sigma *pi) * exp**(-1/2 (x-mu)/ sigma)**2)
+
+
+	What happens if we have a quantity that we calculate based on other things we measure?:
+
+what are the errors/uncertainties in your measurements? Uncertainties in 'location' for time and distance since its moving, how am I measuring this ? Am I following it with another car or by foot? Measuring distance via meter stick or? Is this on a football field with already denoted distance or on an open road? That would lead to large uncertainty in distance if you're eyeballing it.
+
+how do you calcualte the speed?  s = d/t
+
+is the speed uncertainty-less or should you have a means to calculate its uncertainty? ideas on what you should take into account? It would not be uncertainty-less and you would have to calculate it based on how you're measuring in the first place. 
+
+***** OUT:  Mon Sep 14 15:35:25
 
 
 
