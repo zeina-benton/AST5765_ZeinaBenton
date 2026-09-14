@@ -817,10 +817,15 @@ def squareplot(var1, var2, n, saveplot=False) :
     plt.show()
 
 Then committed to GitHub by:
-Git status
-Git add .
-Git commit -m "hw3 update code"
+git pull --rebase origin main
 Git push
+Since I had an issue with ds. Store with somehow somewhere else my repo being ahead.
+
+Stopping now.
+*****OUT: Mon Sep 14 10:23:33 EST 2026
+
+
+
 
 
 
