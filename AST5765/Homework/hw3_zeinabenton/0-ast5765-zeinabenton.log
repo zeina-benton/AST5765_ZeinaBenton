@@ -878,6 +878,14 @@ F) Screenshot png 'hw3_zeinabenton_problem5f_screenshot1.png' is the ss for GitH
 
 G) everything copied already from previous steps!
 
+H) I cd AST5765_ZeinaBenton and git pull.
+cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/0-ast5765-zeinabenton.log hw3_zeinabenton
+Cd
+tar zcf hw3_zeinabenton.tar.gz hw3_zeinabenton
+And submit!
+
+I) copy would be cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/0-ast5765-zeinabenton.log and tar zcf hw3_zeinabenton.tar.gz hw3_zeinabenton and submitting. 
+
 
 
 
