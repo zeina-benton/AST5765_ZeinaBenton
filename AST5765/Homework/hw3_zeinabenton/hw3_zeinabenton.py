@@ -8,7 +8,7 @@
 (which may be a scalar or an array of any dimension or numerical type).
 """
 #2f
-from hw3_zeinabenton_support_functions import square
+from hw3_zeinabenton_support_functions import square, squareplot
 
 answer = square(5)
 print(answer)
@@ -28,4 +28,9 @@ print(square(test_square_1))
 #2i
 test_square_2 = np.arange(25, dtype=float).reshape(5, 5)
 print(square(test_square_2))
+
+
+# %%
+squareplot(1, 7, 5, saveplot='hw3_zeinabenton_squareplot.pdf')
+
 # %%
