@@ -930,8 +930,46 @@ how do you calcualte the speed?  s = d/t
 
 is the speed uncertainty-less or should you have a means to calculate its uncertainty? ideas on what you should take into account? It would not be uncertainty-less and you would have to calculate it based on how you're measuring in the first place. 
 
-***** OUT:  Mon Sep 14 15:35:25
+****** OUT:  Mon Sep 14 15:35:25
 
+
+
+*****IN:  Wed Sep 16 14:27:43 EST 2026
+
+Opened this log in class. Going over hw3.
+Went through screensharing hw and now notebook.
+	think pair share:
+x,dx = 2.0, 0.2
+y, dy = 1.32, 0.15
+z = (3*x) + y**2
+
+par1 = 3 #deriv z to x
+par2 = 2 * y
+dz = np.sqrt( (par1*dx)**2 + (par2*dy)**2 )
+print('z +- dz ={0:.2f}+-{1:.2f}'.format(z, dz))
+z +- dz =7.74+-0.72
+
+	think pair share
+N1 = 723
+t = 15
+N2 = 19
+B = 14.2
+N1_corr = N1 - B
+N2_corr = N2 - B
+
+err_N1 = np.sqrt(N1)
+err_N2 = np.sqrt(N2)
+print("Uncertainty for N1 and N2:", err_N1, err_N2)
+
+rel_N1 = err_N1 / N1_corr
+rel_N2 = err_N2 / N2_corr
+print("Relative uncertainty for N1 and N2:", rel_N1, rel_N2)
+
+Uncertainty for N1 and N2: 26.888659319497503 4.358898943540674
+Relative uncertainty for N1 and N2: 0.037935467437214314 0.9081039465709736
+
+
+*****OUT:  Wed Sep 16 15:39:43  EST 2026
 
 
 
