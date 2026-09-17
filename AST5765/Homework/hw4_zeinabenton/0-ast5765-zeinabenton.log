@@ -1,0 +1,1241 @@
+Zeina Benton
+Log for AST5765, Fall 2026
+*****IN: Wed Aug 26 15:11:03 EST 2026
+Opened TextEdit, started this log, saved as:
+/home/zeinabenton/Desktop/0-ast5765-zeinabenton.log
+
+Name: Zeina Benton
+Username: zeinabenton
+What astronomy classes have you taken
+I have taken numerous different astronomy classes as my undergraduate degree was astrophysics (i.e. observation astronomy data analysis).
+
+Are you generally comfortable with calculus and physics?
+Yes
+
+Have you ever programmed a computer?
+No I haven’t programmed a computer, I program in Python in a computer.
+
+In what language(s)?
+Refer to above question.
+
+Have you taken a programming class, and if so which?
+No not formally, I am research self-taught.
+
+Have you taken statistics or probability?
+No
+
+Will you be attending the DPS conference this year, or will
+you be away otherwise?
+I am unsure currently, depends on my PhD advisor.
+
+Why are you taking this course?
+As a PhD requirement and to better my programming skills.
+
+Are there particular topics you hope to learn?
+Any skills beyond my current knowledge of observational astronomy.
+
+If you have programmed outside of a course before, please
+briefly describe:
+I have coded in my stellar astrophysics research, investigating the evolution and structure of NGC 2264.
+
+If you have worked with scientific data before, briefly
+describe your experience:
+I have worked with large data sets such as 2MASS and Gaia for star catalogues.
+
+Please describe any projects in astronomy, including
+involvement in amateur groups, owning a telescope,
+research, etc.:
+As stated above, I have worked on smaller telescopes in an observational astronomy class and outside of classwork, I researched star clusters. Additionally, I was in an astrophotography course.
+
+Steps in log:
+I will enter my course folder labeled AST5765, enter Homework folder, and start a folder labeled hw0_zeinabenton (number changes with each assignment). Then open a textedit (Mac) file in said folder named 0-ast5765-zeinabenton.log (ensure that the file is 'save as plain text for a txt file). Then zip (compress the folder) the folder with the file and submit it.
+
+*****OUT: Wed Aug 26 15:17:00 EST 2026
+
+
+
+
+
+*****IN: Fri Aug 28 14:50:40 EST 2026
+
+Opened TextEdit, started this log, saved as:
+/home/zeinabenton/Desktop/1-ast5765-zeinabenton.log
+
+Came into class and downloaded anaconda for my Mac. I was able to run it and install it, then opened Jupyter Notebooks.
+
+The next documents to read and look into are learnt, learn shell, and learn python that were uplaoded. 
+
+First trying learngit. Trying https://try.github.io/ tutorial. I read it and I have already downloaded it and have a username (Zeina-benton). I created a repository name AST5765_ZeinaBenton and cloned it with the desktop https://github.com/zeina-benton/AST5765_ZeinaBenton.git.
+
+*****OUT: Fri Aug 28 15:02:28 EST 2026
+
+
+*****IN: Fri Aug 28 15:04:28 EST 2026
+
+Trying commands in my Github repository I made for the course AST5765_ZeinaBenton.
+Tried git init, setting an email, and git status. I realized many of the tutorials need files a such to work with, so I began hw 1.
+
+Following homework 1, I started the questions and opened Jupyter notebooks into my course folder/homework/homework 1 folder to then hit Shift+command+3 to screenshot evidence of it running. I have Python 3 files.
+
+I then following problem 2b, hit Shift+command+3 to screenshot GitHub desktop and showered the repo for the course as stated above. I am still working on the next part, in which a screenshot of git status is needed to be called. I assume I need to go back to other documents to figure this out, as I tried opening ym general folder and typing that and it did not come back correctly.
+
+I figured it out and went to my repo/copied course folder/ moved it to repo folder/ and then opened terminal in said folder. Then ran git init and git status. It said nothing had happened, which makes sense because no files have been added and such.
+
+Stokes is not up or working per today's date, so number 3 will be skipped for the time being.
+
+Then for problem 4, I made the log file a plain text, saved it and correctly labeled it 1-ast5765-zeinabenton.log and then placed in hw1 folder. Then compress the folder to zip it and submit it to Webcourses. Will check back in on 30th or 31st for the Stokes update.
+However, I need to figure out how to make sure the git repo is updating files as I do them (I.e. log isn't updating as I save it).
+
+*****OUT:  Fri Aug 28 15:45:37 EST 2026
+
+
+*****IN: Sun Aug 30 19:55:11 EST 2026
+
+I attempted today to see if Stokes was working in order to answer question 4.
+I was on campus and had to download the UCF VPN Cisco. This ended up being a process in itself, needed the Cisco client to be downloaded and allowed computer use.
+
+I was then able to follow the stoke pdf in Webcourses to then login with the ssh command using my NID and password. Then typing ls which prompts nothing, likely because there are no created folders to view within my current directory in my name. After completing that and logging out and screenshotting (Shift+command+3). I then add that to my course folder within hw1.
+
+Then as mentioned, to finish this I will close out the log, compress the overall hw1 folder to zip it, and then submit it to Webcourses.
+
+*****OUT: Sun Aug 30 19:59:39 EST 2026
+
+
+
+
+
+*****IN:  Mon Aug 31 14:25:27 EST 2026
+Entered class and started this log. [LECTURE DAY]
+
+Logged into stokes via ssh ze493669@stokes.ist.ucf.edu. We followed a demo/lecture in class.
+- Mkdir: make a directory
+- ls or ls -lFs or ls -l etc...: list folders/files or show hidden files whether in time order or reverse order, there are many options.
+- cd : change directory
+- scp: secure copy, allows copying to other computers
+- cd .. : changes directory for actions such as scp prompts that are done in original directory to then go back to stokes
+- rm: removing files
+- !$ : last done command
+- ls f*: starts with f, "wild card"
+- touch: creates a file and make it our current date
+- cat: reading files
+- cat ....... > longer.txt: puts cat file in listed other file
+- less: view file content without opening with cat
+- file: list types of files you have
+- file.. *: describes type of file and the files type inside it
+- wc: wordcount via lines/words/characters
+- man: offers manual of any command listed after
+-chmod: changes directory permissions
+
+
+*****OUT:  Mon Aug 31 15:09:25 EST 2026
+
+
+
+
+*****IN: Wed Sep  2 14:27:14 EST 2026
+Opened this log for lecture 4 (W).
+
+We are practicing work in Python_functions_coding_style_F25-classroom-work.py file.
+* .T = transpose
+
+Closed this log at end of class.
+
+*****OUT: Wed Sep  2 14:32:29 EST 2026
+
+
+
+
+*****IN: Thu Sep  3 14:23:36 EST 2026
+Opened this log for working on HW2.
+
+HW2:
+
+1) I opened my terminal and ran 'mkdir hw2_zeinabenton' to create a folder. I then did:
+mv hw2_zeinabenton Desktop/ 
+mv ~/Desktop/hw2_zeinabenton ~/Desktop/AST5765/
+mv ~/Desktop/AST5765/hw2_zeinabenton ~/Desktop/AST5765/Homework/
+To place it in my Homework folder. Then to create a python file, for right now I am used a notebook so it is pynb, I opened the hw2_zeinabenton folder in Jupyter Notebooks to create the pynb file for the rest of the questions.
+
+2) a1) [   0.    1.    2. ...  998.  999. 1000.]
+	a2) 0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+
+	1001 elements are needed to included 1000.
+
+   a2) int64
+	0.0
+ 	1000.0
+   B1) [0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+   B2) 0.0
+	6.283185307179586
+
+  C) [ 0.00000000e+00  6.28314397e-03  1.25660399e-02 ... -1.25660399e-02
+ -6.28314397e-03 -2.44929360e-16]
+
+  D) 0.9949510169813002
+
+3) Code and an output image saved as hw2_question3b_plot.png
+
+
+
+Pausing here on homework.
+
+Edit* I made a mistake of opening Jupyter separate and not through Git, therefore I had to move it via terminal following:
+- mv Desktop/AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton.ipynb /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton
+-  mv Desktop/AST5765/Homework/hw2_zeinabenton/hw2_question3b_plot.png  /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton
+- mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_zeinabenton.ipynb /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
+- mv /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/hw2_question3b_plot.png /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/
+
+*****OUT:  Thu Sep  3 16:16:35 EST 2026
+
+
+
+
+*****IN: Fri Sep  4 09:50:33 EST 2026
+Opened this log and resumed work for hw2.
+
+HW2:
+
+4) a1)
+	[-1.   -0.98 -0.96 -0.94 -0.92 -0.9  -0.88 -0.86 -0.84 -0.82 -0.8  -0.78
+ -0.76 -0.74 -0.72 -0.7  -0.68 -0.66 -0.64 -0.62 -0.6  -0.58 -0.56 -0.54
+ -0.52 -0.5  -0.48 -0.46 -0.44 -0.42 -0.4  -0.38 -0.36 -0.34 -0.32 -0.3
+ -0.28 -0.26 -0.24 -0.22 -0.2  -0.18 -0.16 -0.14 -0.12 -0.1  -0.08 -0.06
+ -0.04 -0.02  0.    0.02  0.04  0.06  0.08  0.1   0.12  0.14  0.16  0.18
+  0.2   0.22  0.24  0.26  0.28  0.3   0.32  0.34  0.36  0.38  0.4   0.42
+  0.44  0.46  0.48  0.5   0.52  0.54  0.56  0.58  0.6   0.62  0.64  0.66
+  0.68  0.7   0.72  0.74  0.76  0.78  0.8   0.82  0.84  0.86  0.88  0.9
+  0.92  0.94  0.96  0.98  1.  ]
+
+   A2) [-0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5
+ -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5  -0.5
+ -0.5  -0.5  -0.48 -0.46 -0.44 -0.42 -0.4  -0.38 -0.36 -0.34 -0.32 -0.3
+ -0.28 -0.26 -0.24 -0.22 -0.2  -0.18 -0.16 -0.14 -0.12 -0.1  -0.08 -0.06
+ -0.04 -0.02  0.    0.02  0.04  0.06  0.08  0.1   0.12  0.14  0.16  0.18
+  0.2   0.22  0.24  0.26  0.28  0.3   0.32  0.34  0.36  0.38  0.4   0.42
+  0.44  0.46  0.48  0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5
+  0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5   0.5
+  0.5   0.5   0.5   0.5   0.5 ]
+
+   B1) Code and pdf saved as hw2_question4b2_plot.pdf
+
+
+5) 1. Skyfield is a python package that helps computing positions for stars, planets, satellites in orbit around Earth. To use in your code, you would load in your file (I.e. asp) and then simply put the planet (i.e. 'earth' and 'mars') and then earth.at(t).observe(mars) to get the position and it's coordinates. 
+https://rhodesmill.org/skyfield/
+
+   2.  PyCBC is a python package designed for gravitational wave astronomy and analysis. The modules within allow for signal processing, filtering, and transforms that work best with LIGO or Virgo data. It was used
+in the firest detection of graviational waves by LIGO.
+https://pycbc.org/
+
+6) Testing code works in Stokes means I must log into Stokes via terminal. First login in with ssh ze493669@stokes.ist.ucf.edu and then entering your password. First, I worked in Jupyter notebook so I ran jupyter nbconvert --to script hw2_zeinabenton.ipynb  in terminal. Now with it as a python file and update with my Github, now on to:
+	a) Stokes login: Terminal then ssh ze493669@stokes.ist.ucf.edu and then entering your password
+	b) I did 'mkdir hw2_zeinabenton' and ran ls:
+hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
+
+
+
+
+Will be continued later, I am now in class.
+
+*****OUT: Fri Sep  4 14:11:14 EST 2026
+
+
+
+
+*****IN: Fri Sep  4 14:14:14 EST 2026
+Entered class and started this log.
+We are finishing the lecture 4 workbook in Jupyter notebooks.
+Went over homework formatting.
+
+
+*****OUT: Fri Sep  4 14:40:10 EST 2026
+
+
+
+
+*****IN:  Sat Sep  5 14:48:14 EST 2026
+Opened this log to resume hw 2 question 6, part c.
+
+6) c) After making the folder in stokes (part b), I was able to copy my local repo folder to stokes in terminal by:
+ 	scp /Users/zeinabenton/Documents/GitHub/AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton.py ze493669@stokes.ist.ucf.edu:~
+Where -r is not needing after scp because it's a single file.
+Then I moved that file to the hw2_zeinabenton stoles folder by:
+	mv hw2_zeinabenton.py hw2_zeinabenton/
+
+
+   D) an and b) For testing, I typed 'python hw2_zeinabenton/hw2_zeinabenton.py'. I got a traceback saying error no module named dumpy. I then did 'python -m pip install --user numpy' because stokes doesn't seem to like pip install numpy here. Then I tried the same command to run python, and got 'OpenBLAS blas_thread_init:' errors. After troubleshooting, I tried 'export OPENBLAS_NUM_THREADS=1' to keep it to one thread, and then ran python again. Then I ran into a pandas and matplotlib error, and did the same installation process. I then got an error that I am in an outdated python version, and it turns out stokes automates to Python 2.7.18 and I needed Python 3.11.4 in Python3 - so I corrected for this by 'python3 -m pip install --user matplotlib' and 'python3 hw2_zeinabenton/hw2_zeinabenton.py'. Now it runs!
+	Example: [   0.    1.    2. ...  998.  999. 1000.]
+float64
+0.0
+1000.0
+[0.         0.00628319 0.01256637 ... 6.27061894 6.27690212 6.28318531]
+0.0
+6.283185307179586
+
+
+	e) I have been committing and pushing into Github via my desktop program by pressing the button and having it update. This instruction is unclear to me if this refers to that or making another directory to the same repo in stokes. So if this refers to IN stokes, I did ' git clone https://github.com/zeina-benton/AST5765_ZeinaBenton.git' to clone the repo here. Now I have after ls:
+	AST5765_ZeinaBenton  hw2_zeinabenton  listed_shell_test.dat  shell_test  shell_test.zip  test.dat
+So now as I already mentioned I keep GitHub updated, when look into ls and use git status, it says it is up to date. Stokes and Github now have the same structure of AST6765/Homework/hw2_zeinabenton and contains the png/pdf/py files.
+
+	f) Screenshot is labeled hw2_zeinabenton_problem6f_screenshot1.png.
+	g)Now to update stokes with the screenshot, I had to do 'cd ~/AST5765_ZeinaBenton' and then 'git pull' to pull the updates contents (my screenshot) into stokes. Now after 'cd hw2_zeinabenton' I can see: hw2_question3b_plot.png  hw2_question4b2_plot.pdf  hw2_zeinabenton_problem6f_screenshot1.png  hw2_zeinabenton.py, after I did 'cp AST5765/Homework/hw2_zeinabenton/hw2_zeinabenton_problem6f_screenshot1.png ~/hw2_zeinabenton/'.
+
+	h) a) Now following a similar process, I will (once this log is done) do:
+	git pull
+	cp AST5765_ZeinaBenton/AST5765/Homework/hw2_zeinabenton/0-ast5765-zeinabenton.log ~/hw2_zeinabenton/
+	cd hw2_zeinabenton
+	ls
+	   b) Then in stokes:
+		tar zcf hw2_zeinabenton.tar.gz hw2_zeinabenton
+		cp hw2_zeinabenton.tar.gz ~/AST5765_ZeinaBenton/Handin/
+		And submit! It'll be in GitHub seen.
+
+
+
+*****OUT: Sat Sep  5 15:10:09 EST 2026
+ 
+
+
+
+
+
+******IN: Wed Sep  9 14:44:07 EST 2026
+Opened log upon entering class. Running measurement/probability practice file.
+
+Q: What are effects that affect the measurement? If the tape isn't measured at 0 it would affect, if the measurement isn't in right units you would have to convert, keeping stick perpendicular.
+
+Q: Bullseye Question
+
+Q: Classify errors:  systematic, illegitimate, random / 3 examples: illegitimate (misspelling code), systematic (noise of a phone light when running a telescopic observation), random (Gaia colorband uncertainty)
+
+
+*****OUT:  Wed Sep  9 14:46:46 EST 2026
+
+
+
+
+
+*****IN: Fri Sep 11 14:38:15 EST 2026
+Opened log in class. Finishing Wednesday's lecture and then went over hw2.
+
+
+With last 20 minutes we worked on practicum assignment:
+My assignment code is under Practicum1_zeinabenton.py.
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+#1a and 1c (no loop)
+array = np.zeros((300, 200), dtype = np.float64) + np.arange(200)
+
+#1b (loop)
+for x in range(300):
+    for y in range(200):
+        array [x,y] = y
+
+#1d
+plt.imshow(array, cmap = 'gray')
+plt.gca().invert_yaxis()
+
+#1e
+rand_x = np.random.randint(0, 300, size=5)
+rand_y = np.random.randint(0, 200, size=5)
+
+values = array[rand_x, rand_y]
+print("Output:" , values)
+
+rand_x1 = np.random.randint(0, 300, size=5)
+rand_y1 = np.random.randint(0, 200, size=5)
+
+values1 = array[rand_x1, rand_y1]
+print("Output:" , values1)
+    
+Output: [168. 111.   4. 106. 142.]
+Output: [106.  95.  94.   5. 179.]
+
+
+#2 Using ChatGPT
+To AI I said :Make a 300×200 Float64 array. Each array element should contain its own
+x coordinate, starting with x = 0 for column 0 and ending with x = 299 for
+column 299 (i.e., column 0 has 200 zeros).
+▪ How do you do that with a loop?
+▪ How do you do that without any loops?
+▪ Display the array using the matplotlib function for showing the image with
+a cmap of ‘gray’.
+▪ Examine several randomly placed array elements with Python to be sure
+the values match the y coordinate in the print statements. Be careful that
+the final array has the correct data type.
+
+Then it outputted code such as:
+
+	With loop
+import numpy as np
+import matplotlib.pyplot as plt
+
+a = np.zeros((200, 300), dtype=np.float64)
+
+for x in range(300):
+    a[:, x] = x
+
+print(a.shape)
+print(a.dtype)
+
+
+	No loop
+a = np.arange(300, dtype=np.float64)
+a = np.tile(a, (200, 1))
+
+	Then for the image show
+plt.imshow(a, cmap='gray')
+plt.show()
+
+
+
+	For checking, it said:
+import random
+
+for i in range(5):
+    x = random.randint(0, 299)
+    y = random.randint(0, 199)
+
+    print("x =", x, "y =", y, "array value =", a[y, x])
+
+
+Then I said to AI: For the image show, what are the y and x axis. Make sure it has 0 starting for y axis. Output the image array to me here.
+Then it said to me:
+plt.imshow(a, cmap='gray', origin='upper')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.xticks([0, 50, 100, 150, 200, 250, 299])
+plt.yticks([0, 50, 100, 150, 199])
+plt.show()
+
+The image output in ChatGPT did not look right... so I tried the last part in Google Gemini to try as well. The inputs from earlier were the same, and it couldn't offer any image generation. However it did offer more clean code, I included a screenshot of this.
+
+#3
+import astropy.io.fits as fits
+
+im = fits.getdata('m42_40min_ir.zip') 
+plt.imshow(im, cmap = 'gray')
+
+
+Not finished! Class ended.
+
+*****OUT:  Fri Sep 11 16:03:03 EST 2026
+
+
+
+
+*****IN: Fri Sep 11 16:23:23 EST 2026
+Opened this log to finish the practicum assignment. 
+
+Continuing #3: 
+
+import astropy.io.fits as fits
+
+im = fits.getdata('m42_40min_ir.zip') 
+plt.imshow(im, cmap='gray', origin='lower')
+
+plt.xlabel('X pixel')
+plt.ylabel('Y pixel')
+plt.title('m42 Image - Zeina Benton')
+
+plt.savefig('Practicum1_zeinbenton_problem3_m42figure.png')
+
+
+Then I am saving this Jupyter notebook as a python file. I am then creating a subfolder labeled Practicum1_zeinabenton by:
+'mkdir Practicum1_zeinabenton'
+mv Practicum1_zeinabenton Desktop/ 
+mv ~/Desktop/Practicum1_zeinabenton ~/Desktop/AST5765/
+mv ~/Desktop/AST5765/Practicum1_zeinabenton ~/Desktop/AST5765/Handin/
+
+To place this in the handin category as it was not stated otherwise where it should go. 
+Then when in the Handin folder I did:
+tar zcf Practicum1_zeinabenton.tar.gz Practicum1_zeinabenton
+
+The submitted to web courses.
+
+******OUT: Fri Sep 11 20:17:57 EST 2026
+
+
+
+******IN:  Sun Sep 13 13:49:34 EST 2026
+Opened this log to begin homework 3.
+
+1. I made hw3_zeinabenton folder by:
+cd AST5765    
+cd Homework
+mkdir hw3_zeinabenton
+Touch hw3_zeinabenton.py
+Git push
+
+I will be working in VScode now, as support files with functions are easier to import here in my opinion.
+
+
+2. a) As it is not directly specified in hw3, regarding instructions in the hw format rules pdf, I create a python file called hw3_zeinabenton_support_functions.py where the square function will be.
+
+  B) What are the parts that need to be
+included? Describe them and explain why you think they are there in your log.?
+
+
+	In the support file example, documentation in docustring format seems to be important for explaining functions. This included parameters and explaining variables for the function. It is very detailed and lengthy. Without this, someone else looking at your function may not understand it at all.
+
+     C) From the example file I kept:
+"""This is the docstring for the example.py module.  Modules should
+have short, all-lowercase names.  The module name may have underscores if
+this improves readability.
+
+Every module should have a docstring at the very top of the file.  The
+module's docstring may extend over multiple lines.  If your docstring does
+extend over multiple lines, the closing three quotation marks must be on
+a line by themselves, preferably preceeded by a blank line.
+
+"""
+
+#Remember that all libraries needed from your functions should be
+#imported at the start:
+
+import os # standard library imports first
+
+# Do NOT import using *, e.g. from numpy import *
+#
+# Import the module using
+#
+#   import numpy
+#
+# instead or import individual functions as needed, e.g
+#
+#  from numpy import array, zeros
+#
+# If you prefer the use of abbreviated module names, we suggest the
+# convention used by NumPy itself::
+
+import numpy as np
+import scipy as sp
+import matplotlib as mpl
+import matplotlib.pyplot as plt  # NOTE: pyplot, *not* pylab!
+import astropy.io.fits as fits
+
+# These abbreviated names are not to be used in docstrings; users must
+# be able to paste and execute docstrings after importing only the
+# numpy module itself, unabbreviated.
+
+#if you need to import functions from other files you can do it
+#afterwards like this:
+from my_module import my_func, other_func
+
+#then write your functions
+def foo(var1, var2, long_var_name='hi') :
+    #this is our function's docstring!
+    """A one-line summary that does not use variable names or the
+    function name.
+
+    Several sentences providing an extended description. Refer to
+    variables using back-ticks, e.g. `var`.
+
+    Parameters
+    ----------
+    var1 : array_like
+        Array_like means all those objects -- lists, nested lists, etc. --
+        that can be converted to an array.  We can also refer to
+        variables like `var1`.
+    var2 : int
+        The type above can either refer to an actual Python type
+        (e.g. ``int``), or describe the type of the variable in more
+        detail, e.g. ``(N,) ndarray`` or ``array_like``.
+    Long_variable_name : {'hi', 'ho'}, optional
+        Choices in brackets, default first when optional.
+
+    Returns
+    -------
+    describe : type
+        Explanation
+    output : type
+        Explanation
+    tuple : type
+        Explanation
+    items : type
+        even more explaining
+
+    Other Parameters
+    ----------------
+    only_seldom_used_keywords : type
+        Explanation
+    common_parameters_listed_above : type
+        Explanation
+
+    Raises
+    ------
+    BadException
+        Because you shouldn't have done that.
+
+    See Also
+    --------
+    otherfunc : relationship (optional)
+    newfunc : Relationship (optional), which could be fairly long, in which
+              case the line wraps here.
+    thirdfunc, fourthfunc, fifthfunc
+
+    Notes
+    -----
+    Notes about the implementation algorithm (if needed).
+
+    This can have multiple paragraphs.
+
+    You may include some math:
+
+    .. math:: X(e^{j\omega } ) = x(n)e^{ - j\omega n}
+
+    And even use a greek symbol like :math:`omega` inline.
+
+    References
+    ----------
+    Cite the relevant literature, e.g. [1]_.  You may also cite these
+    references in the notes section above.
+
+    .. [1] O. McNoleg, "The integration of GIS, remote sensing,
+       expert systems and adaptive co-kriging for environmental habitat
+       modelling of the Highland Haggis using object-oriented, fuzzy-logic
+       and neural-network techniques," Computers & Geosciences, vol. 22,
+       pp. 585-588, 1996.
+
+    Examples
+    --------
+    These are written in doctest format, and should illustrate how to
+    use the function.  Use the plain python prompt (">>> ") for the
+    example commands, and put the expected output on a line without a
+    prompt, as follows:
+
+
+    >>> a=[1,2,3]
+    >>> print([x + 3 for x in a])
+    [4, 5, 6]
+    >>> print("a\n\nb")
+    a
+    <BLANKLINE>
+    b
+
+    The examples in docstrings can be run with the 'doctest' package:
+
+    python -m doctest -v doctest_simple_with_docs.py
+
+    See:
+
+    https://pymotw.com/2/doctest/
+
+    for more examples.  There are several different testing packages,
+    including 'doctest' and 'nose'.  All use the same format when it
+    comes to tests in docstrings, but offer different testing
+    functionality.
+
+    nosetests --with-doctest your_python_file.py
+
+    If your example prints random numbers, use an ellipsis ('...') to
+    skip the part of the output that is variable.
+
+    Revisions
+    ---------
+    2008-09-11 jh@physics.ucf.edu added Revisions section
+               The Revisions section is where you record modifications
+               to the file.  In the Python and NumPy sources, this is
+               handled by a revision control system like Git.  If you
+               are not using one, and even sometimes if you are, it's
+               good to put the revision notes right into the
+               docstring.
+
+    2008-09-11 jh@physics.ucf.edu downloaded and edited from
+        http://projects.scipy.org/scipy/numpy/browser/trunk/doc/example.py
+    2014-08-26 jh@physics.ucf.edu updated docstring
+    2016-09-14 jh@physics.ucf.edu Added doctest commands and discussion.
+    2018-08-30 jh@physics.ucf.edu updated original from
+    https://github.com/andyk/load_gen/blob/master/numpy/doc/example.py
+        and merged local changes.
+    """
+
+#this is the main body of your function
+
+#remember your code should be well-commented throughout!
+
+    pass
+
+
+But I will be editing it for the later parts.
+
+  D)For the example file, I've changed:
+def square(var1, var2, long_var_name='hi') :
+    """
+    square takes as input a scalar or array of any dimension or numerical type and
+    returns its square.
+And in Vscode I opened terminal and in hw3_zeinabenton I did:
+Git status
+Git add .
+Git commit -m "hw3 support file"
+Git push
+
+  E) I have: 
+import numpy as np
+import scipy as sp
+import matplotlib as mpl
+import matplotlib.pyplot as plt  # NOTE: pyplot, *not* pylab!
+import astropy.io.fits as fits
+
+# These abbreviated names are not to be used in docstrings; users must
+# be able to paste and execute docstrings after importing only the
+# numpy module itself, unabbreviated.
+#if you need to import functions from other files you can do it
+#afterwards like this:
+from my_module import my_func, other_func
+#then write your functions
+
+
+def square(var1) :
+    """
+    square takes as input a scalar or array of any dimension or numerical type and
+    returns its square.
+
+    AKA  square returns the square of its input. 
+
+    Parameters
+    ----------
+    var1 : array_like
+        All objects -- lists, nested lists, etc. --
+        that can be converted to an array.  
+
+    Returns
+    -------
+    Squared : array_like
+        The square of the input.
+
+    Examples
+    -----
+    >>> print(square(5))
+    25
+
+    >>> print(square(np.array([1,2,3])))
+    [1 4 9]
+
+    """
+
+    squared = var1**2
+    return squared
+
+
+	F) To test, I am back in hw3_zeinabenton.py and:
+
+from hw3_zeinabenton_support_functions import square
+
+answer = square(5)
+print(answer)
+
+And a separate interactive window opened and gave me 25.
+
+Then :
+import numpy as np
+from hw3_zeinabenton_support_functions import square
+
+answer1 = square(np.array([4, 59, 67]))
+print(answer1)
+
+Gave [ 16 3481  4489]
+
+A screenshot of this is labeled hw3_zeinabenton_problem2f_screenshot1.png.
+And commit to git hub here I did:
+Git status
+Git add .
+Git commit -m "HW3 q 2 work"
+Git push
+
+
+	g) As stated, I had no issue with my input and output of the function and committed everything as called for. Proof of my git hub history working is shown in hw3_zeinabenton_problem2g_screenshot2.png.
+
+
+Pausing hw3 for now at #2h.
+*****OUT: Sun Sep 13 13:57:12 EST 2026
+
+
+
+
+*****IN:  Mon Sep 14 09:52:38 EST 2026
+Opened log before first class to continue hw3.
+
+	2h) test_square_1 = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(square(test_square_1))
+	Output: [ 0  1  4  9 16 25 36 49 64 81]
+
+	i) test_square_2 = np.arange(25, dtype=float).reshape(5, 5)
+print(square(test_square_2))
+	Output: [[  0.   1.   4.   9.  16.]
+ [ 25.  36.  49.  64.  81.]
+ [100. 121. 144. 169. 196.]
+ [225. 256. 289. 324. 361.]
+ [400. 441. 484. 529. 576.]]
+
+
+3)I wrote:
+def squareplot(var1, var2, n, saveplot=False) :
+    """
+    Squareplot is to plot the squares of numbers.
+
+    Works with definition square to plot the squares of numbers.
+
+    Parameters
+    ----------
+    var1 : array_like
+        Low numbers to be squared and plotted.  
+
+    var2 : array_like
+        High numbers to be squared and plotted.
+
+    n: int
+        Number of points to be plotted.
+
+    Optional Parameters
+    ----------
+    saveplot : string, optional
+        If True, saves the plot as a PDF file. Default is False.
+    
+    Returns
+    -------
+    None
+
+    Examples
+    -----
+    >>> squareplot(5, 10, 100)
+    >>> squareplot(5, 10, 100, 'hw3_zeinabenton_squareplot.pdf')
+    Plot
+
+    """
+    x = np.linspace(var1, var2, n)
+    y = square(x)
+
+    plt.plot(x, y)
+    plt.xlabel('Input')
+    plt.ylabel('Output')
+    plt.title('Square Function')
+    if saveplot is not False:
+        plt.savefig(saveplot, format='pdf')
+
+    plt.show()
+
+Then committed to GitHub by:
+git pull --rebase origin main
+Git push
+Since I had an issue with ds. Store with somehow somewhere else my repo being ahead.
+
+Stopping now.
+*****OUT: Mon Sep 14 10:23:33 EST 2026
+
+
+*****IN: Mon Sep 14 11:27:07 EST 2026
+Opened hw3, finished Q3.
+
+3) continued for testing the definition. 
+I ran
+ n = np.array([1, 2.5, 4, 5.5, 7])
+squareplot(n, n, 5, saveplot=True)
+
+And received error : ValueError: fname must be a PathLike or file handle
+ - Turns out the issue is from me doing True and it expects a name since I don't have a default pdf name.
+
+When fixing it, the plot appears to be empty. It turns out I did not need to make a separate array.
+
+squareplot(1, 7, 5, saveplot='hw3_zeinabenton_squareplot.pdf')
+- Works and plots a curved line.
+
+
+4) Make a rubric for problem 3.
+This question is completed it hw3_zeinabenton_problem4.txt in hw3_zeinabenton folder.
+
+
+5) a) logged into stokes via ssh ze493669@stokes.ist.ucf.edu and password.
+ B) mkdir hw3_zeinabenton to make folder.
+ C) I had to do git pull to update my stokes git hub repo.
+	Then I did: 
+cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/hw3_zeinabenton_support_functions.py hw3_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/hw3_zeinabenton.py hw3_zeinabenton
+
+And now both py files are in stokes folder.
+
+ D) Then to test, I did  python3 hw3_zeinabenton.py
+	- got numpy error, did  python3 -m pip install --user numpy
+ 	- then  python3 -m pip install --user scipy
+	- then  export OPENBLAS_NUM_THREADS=1
+	- then python3 -m pip install --user matplotlib
+	- python3 -m pip install --user astropy
+ Now it runs! 25
+[  16 3481 4489]
+[ 0  1  4  9 16 25 36 49 64 81]
+[[  0.   1.   4.   9.  16.]
+ [ 25.  36.  49.  64.  81.]
+ [100. 121. 144. 169. 196.]
+ [225. 256. 289. 324. 361.]
+ [400. 441. 484. 529. 576.]]
+
+Then I do
+
+E) Everything is up to date in GitHub for me as previously described.
+
+F) Screenshot png 'hw3_zeinabenton_problem5f_screenshot1.png' is the ss for GitHub logging history. Then I did cd AST5765_ZeinaBenton and git pull then cd and cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/hw3_zeinabenton_problem5f_screenshot1.png hw3_zeinabenton to copy to stokes.
+
+G) everything copied already from previous steps!
+
+H) I cd AST5765_ZeinaBenton and git pull.
+cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/0-ast5765-zeinabenton.log hw3_zeinabenton
+Cd
+tar zcf hw3_zeinabenton.tar.gz hw3_zeinabenton
+And submit!
+
+I) copy would be cp AST5765_ZeinaBenton/AST5765/Homework/hw3_zeinabenton/0-ast5765-zeinabenton.log and tar zcf hw3_zeinabenton.tar.gz hw3_zeinabenton and submitting. 
+
+
+*****OUT: Mon Sep 14 12:30:20 EST 2026
+
+
+
+*****IN: Mon Sep 14  14:46:44 EST 2026
+
+Opened log for class. Finishing lecture workbook.
+
+Continuous probability - can't be halves its either is or not
+
+What is the probability that you get heads in a fair coin toss? What is p9x)?
+	50 %, a Dirac delta function
+What is the probability that you get a 2 in a fair die roll?
+	1/6, =1
+
+ICA :
+#discrete prob.
+
+import numpy as np
+dice = np.array([ 3, 1, 3, 2, 5, 6, 1, 4, 5, 6, 2, 6, 3, 1, 4, 3, 1, 6 ])
+
+mean = np.mean(dice)
+median = np.median(dice)
+
+
+prob = ((1/6)*np.sum(np.arange(1,7)))
+
+print("This is mean, median, probability, respectively:", mean, median, prob)
+
+	This is mean, median, probability, respectively: 3.4444444444444446 3.0 3.5
+
+Now in Error analysis-F25-classroom:
+Gaussian : 1/ sqrt(2 *sigma *pi) * exp**(-1/2 (x-mu)/ sigma)**2)
+
+
+	What happens if we have a quantity that we calculate based on other things we measure?:
+
+what are the errors/uncertainties in your measurements? Uncertainties in 'location' for time and distance since its moving, how am I measuring this ? Am I following it with another car or by foot? Measuring distance via meter stick or? Is this on a football field with already denoted distance or on an open road? That would lead to large uncertainty in distance if you're eyeballing it.
+
+how do you calcualte the speed?  s = d/t
+
+is the speed uncertainty-less or should you have a means to calculate its uncertainty? ideas on what you should take into account? It would not be uncertainty-less and you would have to calculate it based on how you're measuring in the first place. 
+
+****** OUT:  Mon Sep 14 15:35:25
+
+
+
+*****IN:  Wed Sep 16 14:27:43 EST 2026
+
+Opened this log in class. Going over hw3.
+Went through screensharing hw and now notebook.
+	think pair share:
+x,dx = 2.0, 0.2
+y, dy = 1.32, 0.15
+z = (3*x) + y**2
+
+par1 = 3 #deriv z to x
+par2 = 2 * y
+dz = np.sqrt( (par1*dx)**2 + (par2*dy)**2 )
+print('z +- dz ={0:.2f}+-{1:.2f}'.format(z, dz))
+z +- dz =7.74+-0.72
+
+	think pair share
+N1 = 723
+t = 15
+N2 = 19
+B = 14.2
+N1_corr = N1 - B
+N2_corr = N2 - B
+
+err_N1 = np.sqrt(N1)
+err_N2 = np.sqrt(N2)
+print("Uncertainty for N1 and N2:", err_N1, err_N2)
+
+rel_N1 = err_N1 / N1_corr
+rel_N2 = err_N2 / N2_corr
+print("Relative uncertainty for N1 and N2:", rel_N1, rel_N2)
+
+Uncertainty for N1 and N2: 26.888659319497503 4.358898943540674
+Relative uncertainty for N1 and N2: 0.037935467437214314 0.9081039465709736
+
+
+*****OUT:  Wed Sep 16 15:39:43  EST 2026
+
+
+
+******IN:  Thu Sep 17 10:30:24 EST 2026
+Opened log to begin HW4.
+
+1) I opened VSCode and in my Github repo clone, opened terminal:
+Cd AST5765
+Cd Homework
+Mkdir hw4_zeinabenton
+Cd hw4_zeinabenton
+touch hw4_zeinabenton.py
+	then:
+Git status
+Git add .
+Git commit -m "hw4 created"
+git pull --rebase origin main
+git push origin main
+
+2) a). My function is written in hw4_zeinabenton_support_functions.py:
+
+def gaussian_random_generator(N, mu, sigma):
+    """
+    Generates N random numbers from a Gaussian distribution with mean mu and standard deviation sigma.
+
+    Parameters
+    ----------
+    N : int
+        The number of random numbers to generate.
+    mu : float
+        The mean of the Gaussian distribution.
+    sigma : float
+        The standard deviation of the Gaussian distribution.
+    Returns
+    -------
+    random_numbers : array_like
+        An array of N random numbers drawn from the specified Gaussian distribution.
+
+    Examples
+    -----
+    >>> print(gaussian_random_generator(5, 0, 1))
+    [ 0.49671415 -0.1382643   0.64768854  1.52302986 -0.23415337]
+    >>> print(gaussian_random_generator(3, 10, 2))
+    [ 9.76405235 11.16420955  8.14294754]
+
+    """ 
+    return np.random.normal(mu, sigma, N)
+
+	I will be trying it out to make sure it works given the part a prompt in hw4_zeinabenton.py.
+
+from hw4_zeinabenton_support_functions import gaussian_random_generator
+
+print ("Question 2: The Gaussian distribution in Python")
+
+#a
+N = 10000
+mu = 55
+sigma = 13
+
+gaussian_sample = gaussian_random_generator(N, mu, sigma)
+print("The Gaussian sample for part a is: ", gaussian_sample)
+	Output: Question 2: The Gaussian distribution in Python
+The Gaussian sample for part a is:  [54.04142601 80.75624669 60.57935457 ... 57.42634179 63.39479613
+ 67.49151866]
+
+*****OUT:  Thu Sep 17 10:39:46
+
+
+*****IN: Thu Sep 17 14:37:34 EST 2026
+Resuming hw4 work - question 2 b.
+
+2) b) I did:
+#b
+plt.figure(figsize=(10, 6))
+plt.hist(gaussian_sample, bins = np.arange(0, 101, 1), alpha=0.7, color='blue', density=True)
+plt.xlabel('x')
+plt.ylabel('N(x)')
+plt.title('Histogram of Gaussian Sample (N=10,000, mu=55, sigma=13)')
+
+plt.savefig('hw4_zeinabenton_problem2b_plot1.png')
+plt.show()
+
+That plotted the distribution of 10,000 draws using sigma=13 and mu=55.
+
+	c) This part calls for plotting gaussian over the previously made plot. 
+First, in the hw4_zeinabenton_support_functions.py I created a definition for the actual gaussian formula.
+def gaussian(x, mu, sigma):
+    """
+    Calculates the Gaussian probability density at each point in N.
+
+
+    Parameters
+    ----------
+    x : array_like
+        All objects -- lists, nested lists, etc. --
+        that can be converted to an array.  
+    mu : float
+        The mean of the Gaussian distribution.
+    sigma : float
+        The standard deviation of the Gaussian distribution.
+    
+
+    Returns
+    -------
+    p_x : array_like
+        The gaussian probability density at each point in N.
+
+    Examples
+    -----
+    >>> print(gaussian(5, 0, 1))
+    0.3989422804014327
+
+    >>> print(gaussian(np.array([1,2,3]), 0, 1))
+    [0.24197072 0.05399097 0.00443185]
+
+    """
+    variables = (1/(sigma * np.sqrt(2 * np.pi)))
+    exp =  np.exp(-0.5 * ((x - mu) / sigma)**2)
+    p_x = variables * exp
+
+    return p_x
+Then back in my main py file for the plotting:
+
+x = np.arange(0.5, 100.5, 1) #center of each bin
+
+plt.figure(figsize=(10, 6))
+plt.hist(gaussian_sample, bins = np.arange(0, 101, 1), alpha=0.7, color='blue')
+plt.plot(x, N * gaussian(x, mu, sigma), color='red', linewidth=2, label='Gaussian PDF') #new addition
+plt.xlabel('x')
+plt.ylabel('N(x)')
+plt.title('Histogram of Gaussian Sample (N=10,000, mu=55, sigma=13) with Gaussian PDF')
+
+plt.savefig('hw4_zeinabenton_problem2c_plot2.png')
+plt.show()
+
+3) a)
+Full width at half maximum (fwhm) is the range of x between values at which the probability is at half the max value. The book says that from the gaussian PDF, it should equal 2.354 * sigma.
+
+Using my original definition of gaussian:
+(Shorthanded, see above for full or in support functions py)
+variables = (1/(sigma * np.sqrt(2 * np.pi)))
+    exp =  np.exp(-0.5 * ((x - mu) / sigma)**2)
+    p_x = variables * exp
+    return p_x
+The front, aka the variables, can be reduced to A. The largest value that can occur is when x = mu at the peak and therefore the equations becomes reduced to p(mu) = A. 
+If half-width occurs at p(x) = A/2, then upon substituting A/2 for p(x) in the original gaussian PDF formula, and canceling out the common A on both sides, reveals:
+ 1/2 = np.exp(-0.5 * ((x - mu) / sigma)**2). 
+Then natural log on left and ride side to cancel out the e on the RHS offers:
+ln(1/2) = (-0.5 * ((x - mu) / sigma)**2.
+Since ln(1/2) = -ln(2), then ln(2) = 0.5 * ((x - mu) / sigma)**2 after canceling the negatives.
+Then when multiplying the 1/2 as 2 on the LHS, offers now:
+2ln(2) = (x - mu) / sigma)**2
+So then sqrt( 2ln(2)) to get rid of the **2 on RHS, and moving variables around gives:
+X - mu = +- sigma * sqrt(2ln(2))
+
+Then at that point, the 2 half-width points are mu - sigma * sqrt(2ln(2)) and mu + sigma * sqrt(2ln(2)). Now:
+sqrt(2ln(2) =1 .177, and the FWHM is *2, so 1.1777*2 = 2.354 * sigma ! The answer.
+
+
+In my hw4_zeinabenton_support_functions.py I wrote:
+def fwhm(sigma):
+    """
+    Calculates the full width at half maximum (FWHM) of a Gaussian distribution.
+
+    -----
+    Parameters
+    ----------
+    sigma : float
+        The standard deviation of the Gaussian distribution.
+    Returns
+    -------
+    fwhm_value : float
+        The full width at half maximum (FWHM) of the Gaussian distribution.
+    Examples
+    -----
+    >>> print(fwhm(1))
+    2.3548200450309493
+
+    >>> print(fwhm(2))
+    4.7096400900618985
+
+    Notes
+    -----
+    Derivation:
+
+    p(x) = A * exp[-0.5 * ((x - mu)/sigma)^2]
+
+    A/2 = A * exp[-0.5 * ((x - mu)/sigma)^2]
+
+    1/2 = exp[-0.5 * ((x - mu)/sigma)^2]
+
+    ln(1/2) = -0.5 * ((x - mu)/sigma)^2
+
+    ln(2) = 0.5 * ((x - mu)/sigma)^2
+
+    2 * ln(2) = ((x - mu)/sigma)^2
+
+    sqrt(2 * ln(2)) = (x - mu)/sigma
+
+    x - mu = sigma * sqrt(2 * ln(2))
+
+    mu - sigma*sqrt(2ln(2))
+    mu + sigma*sqrt(2ln(2))
+
+    Therefore:
+    FWHM = 2*sigma*sqrt(2ln(2))
+
+    """
+    fwhm_value = 2 * np.sqrt(2 * np.log(2)) * sigma
+    return fwhm_value
+
+For a shorter version that way.
+
+	b) A log log plot analyzes a power-law relationship between 2 variables. This turns a curved power function into a straight line via plot visualization. A power law is:
+Y = a * x**m where a is a scaling factor (intercept) and m is the power (aka the slope).
+To derive the relationship:
+log(y) = log (a*x**m) for log(y) = log(a) + log(x**m)
+log(y) = m * log(x) + log(a), therefore this is the relationship between x, a (the intercept), y and m (the slope). So in this case the vertical axis has y, horizontal is x, the slope is m, the curving line, and the intercept a is where it would start the on y axis.
+
+4) a) First I logged into the UCF VPN. Then:
+ssh ze493669@stokes.ist.ucf.edu and log in.
+
+B) mkdir hw4_zeinabenton
+
+C)
+cd AST5765_ZeinaBenton
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton.py hw4_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_support_functions.py hw4_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem2b_plot1.png hw4_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem2c_plot2.png hw4_zeinabenton
+
+D) to run: python3 hw4_zeinabenton.py
+Error about version, fix: export OPENBLAS_NUM_THREADS=1
+Run again  python3 hw4_zeinabenton.py
+	Works: Question 2: The Gaussian distribution in Python
+The Gaussian sample for part a is:  [63.51902567 55.49275466 47.34163354 ... 65.35734722 50.05421648
+ 50.79998539]
+
+E) Everything is up to date in GitHub aside from the log. I've explained multiple times how I commit to git via: git status, git add . , git commit -m,  git pull --rebase origin main, git push origin main. 
+
+f) The screenshot of my history is under hw4_zeinabenton_problem4f_screenshot1.png. To copy that over,
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem4f_screenshot1.png hw4_zeinabenton
+
+G)Content already copies as stated earlier, only log missing.
+
+H) To copy the log I will, close it out. Then:
+First duplicate log, move it into hw4_zeinabenton
+Cd AST5765_ZeinaBenton
+Git pull
+Cd
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/0-ast5765-zeinabenton.log hw4_zeinabenton
+tar zcf hw4_zeinabenton.tar.gz hw4_zeinabenton ( saves incgeneral stokes directory)
+Cp hw4_zeinabenton.tar.gz AST5765_Zeinabenton/AST5765/Handin (local computer /github)
+Git status
+Git add . 
+Git push
+Submit file to web courses
+
+i) j) HW4 Finished.
+
+*****OUT: Thu Sep 17 16:12:41 EST 2026
+
+
+
+
+
+
