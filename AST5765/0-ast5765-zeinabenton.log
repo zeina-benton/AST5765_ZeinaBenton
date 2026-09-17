@@ -1208,7 +1208,34 @@ Run again  python3 hw4_zeinabenton.py
 	Works: Question 2: The Gaussian distribution in Python
 The Gaussian sample for part a is:  [63.51902567 55.49275466 47.34163354 ... 65.35734722 50.05421648
  50.79998539]
-E) Everything is up to date in GitHub aside from the log. I've explained multiple times how I commit to git via: git status, git add . , git commit -m,  git pull --rebase origin main, git push origin main. The screenshot of my history is under hw4_zeinabenton_problem4f_screenshot1.png.
+
+E) Everything is up to date in GitHub aside from the log. I've explained multiple times how I commit to git via: git status, git add . , git commit -m,  git pull --rebase origin main, git push origin main. 
+
+f) The screenshot of my history is under hw4_zeinabenton_problem4f_screenshot1.png. To copy that over,
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem4f_screenshot1.png hw4_zeinabenton
+
+G)Content already copies as stated earlier, only log missing.
+
+H) To copy the log I will, close it out. Then:
+First duplicate log, move it into hw4_zeinabenton
+Cd AST5765_ZeinaBenton
+Git pull
+Cd
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/0-ast5765-zeinabenton.log hw4_zeinabenton
+tar zcf hw4_zeinabenton.tar.gz hw4_zeinabenton ( saves incgeneral stokes directory)
+Cp hw4_zeinabenton.tar.gz AST5765_Zeinabenton/AST5765/Handin (local computer /github)
+Git status
+Git add . 
+Git push
+Submit file to web courses
+
+i) j) HW4 Finished.
+
+*****OUT: Thu Sep 17 16:12:41 EST 2026
+
+
+
 
 
 
