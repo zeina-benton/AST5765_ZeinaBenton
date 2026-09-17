@@ -973,6 +973,74 @@ Relative uncertainty for N1 and N2: 0.037935467437214314 0.9081039465709736
 
 
 
+******IN:  Thu Sep 17 10:30:24 EST 2026
+Opened log to begin HW4.
+
+1) I opened VSCode and in my Github repo clone, opened terminal:
+Cd AST5765
+Cd Homework
+Mkdir hw4_zeinabenton
+Cd hw4_zeinabenton
+touch hw4_zeinabenton.py
+	then:
+Git status
+Git add .
+Git commit -m "hw4 created"
+git pull --rebase origin main
+git push origin main
+
+2) a)My function is written in hw4_zeinabenton_support_functions.py:
+
+def gaussian_random_generator(N, mu, sigma):
+    """
+    Generates N random numbers from a Gaussian distribution with mean mu and standard deviation sigma.
+
+    Parameters
+    ----------
+    N : int
+        The number of random numbers to generate.
+    mu : float
+        The mean of the Gaussian distribution.
+    sigma : float
+        The standard deviation of the Gaussian distribution.
+    Returns
+    -------
+    random_numbers : array_like
+        An array of N random numbers drawn from the specified Gaussian distribution.
+
+    Examples
+    -----
+    >>> print(gaussian_random_generator(5, 0, 1))
+    [ 0.49671415 -0.1382643   0.64768854  1.52302986 -0.23415337]
+    >>> print(gaussian_random_generator(3, 10, 2))
+    [ 9.76405235 11.16420955  8.14294754]
+
+    """ 
+    return np.random.normal(mu, sigma, N)
+
+	I will be trying it out to make sure it works given the part a prompt in hw4_zeinabenton.py.
+
+from hw4_zeinabenton_support_functions import gaussian_random_generator
+
+print ("Question 2: The Gaussian distribution in Python")
+
+#a
+N = 10000
+mu = 55
+sigma = 13
+
+gaussian_sample = gaussian_random_generator(N, mu, sigma)
+print("The Gaussian sample for part a is: ", gaussian_sample)
+	Output: Question 2: The Gaussian distribution in Python
+The Gaussian sample for part a is:  [54.04142601 80.75624669 60.57935457 ... 57.42634179 63.39479613
+ 67.49151866]
+
+*****OUT:  Thu Sep 17 10:39:46
+
+
+
+
+
 
 
 
