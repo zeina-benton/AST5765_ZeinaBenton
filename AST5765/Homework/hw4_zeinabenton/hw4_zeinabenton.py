@@ -25,9 +25,9 @@ plt.hist(gaussian_sample, bins = np.arange(0, 101, 1), alpha=0.7, color='blue')
 plt.xlabel('x')
 plt.ylabel('N(x)')
 plt.title('Histogram of Gaussian Sample (N=10,000, mu=55, sigma=13)')
-plt.show()
 
 plt.savefig('hw4_zeinabenton_problem2b_plot1.png')
+plt.show()
 
 #c
 x = np.arange(0.5, 100.5, 1) #center of each bin
@@ -38,10 +38,9 @@ plt.plot(x, N * gaussian(x, mu, sigma), color='red', linewidth=2, label='Gaussia
 plt.xlabel('x')
 plt.ylabel('N(x)')
 plt.title('Histogram of Gaussian Sample (N=10,000, mu=55, sigma=13) with Gaussian PDF')
-plt.show()
 
 plt.savefig('hw4_zeinabenton_problem2c_plot2.png')
-
+plt.show()
 
 
 #---------------------------------
@@ -50,3 +49,5 @@ plt.savefig('hw4_zeinabenton_problem2c_plot2.png')
 
 
 
+
+# %%
