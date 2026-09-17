@@ -989,7 +989,7 @@ Git commit -m "hw4 created"
 git pull --rebase origin main
 git push origin main
 
-2) a)My function is written in hw4_zeinabenton_support_functions.py:
+2) a). My function is written in hw4_zeinabenton_support_functions.py:
 
 def gaussian_random_generator(N, mu, sigma):
     """
@@ -1038,10 +1038,177 @@ The Gaussian sample for part a is:  [54.04142601 80.75624669 60.57935457 ... 57.
 *****OUT:  Thu Sep 17 10:39:46
 
 
+*****IN: Thu Sep 17 14:37:34 EST 2026
+Resuming hw4 work - question 2 b.
+
+2) b) I did:
+#b
+plt.figure(figsize=(10, 6))
+plt.hist(gaussian_sample, bins = np.arange(0, 101, 1), alpha=0.7, color='blue', density=True)
+plt.xlabel('x')
+plt.ylabel('N(x)')
+plt.title('Histogram of Gaussian Sample (N=10,000, mu=55, sigma=13)')
+
+plt.savefig('hw4_zeinabenton_problem2b_plot1.png')
+plt.show()
+
+That plotted the distribution of 10,000 draws using sigma=13 and mu=55.
+
+	c) This part calls for plotting gaussian over the previously made plot. 
+First, in the hw4_zeinabenton_support_functions.py I created a definition for the actual gaussian formula.
+def gaussian(x, mu, sigma):
+    """
+    Calculates the Gaussian probability density at each point in N.
 
 
+    Parameters
+    ----------
+    x : array_like
+        All objects -- lists, nested lists, etc. --
+        that can be converted to an array.  
+    mu : float
+        The mean of the Gaussian distribution.
+    sigma : float
+        The standard deviation of the Gaussian distribution.
+    
+
+    Returns
+    -------
+    p_x : array_like
+        The gaussian probability density at each point in N.
+
+    Examples
+    -----
+    >>> print(gaussian(5, 0, 1))
+    0.3989422804014327
+
+    >>> print(gaussian(np.array([1,2,3]), 0, 1))
+    [0.24197072 0.05399097 0.00443185]
+
+    """
+    variables = (1/(sigma * np.sqrt(2 * np.pi)))
+    exp =  np.exp(-0.5 * ((x - mu) / sigma)**2)
+    p_x = variables * exp
+
+    return p_x
+Then back in my main py file for the plotting:
+
+x = np.arange(0.5, 100.5, 1) #center of each bin
+
+plt.figure(figsize=(10, 6))
+plt.hist(gaussian_sample, bins = np.arange(0, 101, 1), alpha=0.7, color='blue')
+plt.plot(x, N * gaussian(x, mu, sigma), color='red', linewidth=2, label='Gaussian PDF') #new addition
+plt.xlabel('x')
+plt.ylabel('N(x)')
+plt.title('Histogram of Gaussian Sample (N=10,000, mu=55, sigma=13) with Gaussian PDF')
+
+plt.savefig('hw4_zeinabenton_problem2c_plot2.png')
+plt.show()
+
+3) a)
+Full width at half maximum (fwhm) is the range of x between values at which the probability is at half the max value. The book says that from the gaussian PDF, it should equal 2.354 * sigma.
+
+Using my original definition of gaussian:
+(Shorthanded, see above for full or in support functions py)
+variables = (1/(sigma * np.sqrt(2 * np.pi)))
+    exp =  np.exp(-0.5 * ((x - mu) / sigma)**2)
+    p_x = variables * exp
+    return p_x
+The front, aka the variables, can be reduced to A. The largest value that can occur is when x = mu at the peak and therefore the equations becomes reduced to p(mu) = A. 
+If half-width occurs at p(x) = A/2, then upon substituting A/2 for p(x) in the original gaussian PDF formula, and canceling out the common A on both sides, reveals:
+ 1/2 = np.exp(-0.5 * ((x - mu) / sigma)**2). 
+Then natural log on left and ride side to cancel out the e on the RHS offers:
+ln(1/2) = (-0.5 * ((x - mu) / sigma)**2.
+Since ln(1/2) = -ln(2), then ln(2) = 0.5 * ((x - mu) / sigma)**2 after canceling the negatives.
+Then when multiplying the 1/2 as 2 on the LHS, offers now:
+2ln(2) = (x - mu) / sigma)**2
+So then sqrt( 2ln(2)) to get rid of the **2 on RHS, and moving variables around gives:
+X - mu = +- sigma * sqrt(2ln(2))
+
+Then at that point, the 2 half-width points are mu - sigma * sqrt(2ln(2)) and mu + sigma * sqrt(2ln(2)). Now:
+sqrt(2ln(2) =1 .177, and the FWHM is *2, so 1.1777*2 = 2.354 * sigma ! The answer.
 
 
+In my hw4_zeinabenton_support_functions.py I wrote:
+def fwhm(sigma):
+    """
+    Calculates the full width at half maximum (FWHM) of a Gaussian distribution.
+
+    -----
+    Parameters
+    ----------
+    sigma : float
+        The standard deviation of the Gaussian distribution.
+    Returns
+    -------
+    fwhm_value : float
+        The full width at half maximum (FWHM) of the Gaussian distribution.
+    Examples
+    -----
+    >>> print(fwhm(1))
+    2.3548200450309493
+
+    >>> print(fwhm(2))
+    4.7096400900618985
+
+    Notes
+    -----
+    Derivation:
+
+    p(x) = A * exp[-0.5 * ((x - mu)/sigma)^2]
+
+    A/2 = A * exp[-0.5 * ((x - mu)/sigma)^2]
+
+    1/2 = exp[-0.5 * ((x - mu)/sigma)^2]
+
+    ln(1/2) = -0.5 * ((x - mu)/sigma)^2
+
+    ln(2) = 0.5 * ((x - mu)/sigma)^2
+
+    2 * ln(2) = ((x - mu)/sigma)^2
+
+    sqrt(2 * ln(2)) = (x - mu)/sigma
+
+    x - mu = sigma * sqrt(2 * ln(2))
+
+    mu - sigma*sqrt(2ln(2))
+    mu + sigma*sqrt(2ln(2))
+
+    Therefore:
+    FWHM = 2*sigma*sqrt(2ln(2))
+
+    """
+    fwhm_value = 2 * np.sqrt(2 * np.log(2)) * sigma
+    return fwhm_value
+
+For a shorter version that way.
+
+	b) A log log plot analyzes a power-law relationship between 2 variables. This turns a curved power function into a straight line via plot visualization. A power law is:
+Y = a * x**m where a is a scaling factor (intercept) and m is the power (aka the slope).
+To derive the relationship:
+log(y) = log (a*x**m) for log(y) = log(a) + log(x**m)
+log(y) = m * log(x) + log(a), therefore this is the relationship between x, a (the intercept), y and m (the slope). So in this case the vertical axis has y, horizontal is x, the slope is m, the curving line, and the intercept a is where it would start the on y axis.
+
+4) a) First I logged into the UCF VPN. Then:
+ssh ze493669@stokes.ist.ucf.edu and log in.
+
+B) mkdir hw4_zeinabenton
+
+C)
+cd AST5765_ZeinaBenton
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton.py hw4_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_support_functions.py hw4_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem2b_plot1.png hw4_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem2c_plot2.png hw4_zeinabenton
+
+D) to run: python3 hw4_zeinabenton.py
+Error about version, fix: export OPENBLAS_NUM_THREADS=1
+Run again  python3 hw4_zeinabenton.py
+	Works: Question 2: The Gaussian distribution in Python
+The Gaussian sample for part a is:  [63.51902567 55.49275466 47.34163354 ... 65.35734722 50.05421648
+ 50.79998539]
+E) Everything is up to date in GitHub aside from the log. I've explained multiple times how I commit to git via: git status, git add . , git commit -m,  git pull --rebase origin main, git push origin main. The screenshot of my history is under hw4_zeinabenton_problem4f_screenshot1.png.
 
 
 
