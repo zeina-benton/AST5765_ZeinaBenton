@@ -1259,4 +1259,16 @@ anti-correlated: the further you get from the sun, the lower the albedo of aster
 *****IN:  Wed Sep 23 14:32:24 EST 2026
 Opened log. Looking over practicum 3.
 
+"Adding in quadrature": error ellipse. Partial of f/ partial u = 1
+F = a u v : partial f/ partial u = av ..... "Adding relative uncertainties in quadrature"
+	sigma_f^2/f^2 = sigma_u^2/u^2 + sigma_v^2/v^2
+	sigma_f = f * sqrt(sigma_u^2/u^2 + sigma_v^2/v^2+...) for uncorrelated variables
+
+
+chi^2 = sum (( x_i - mu/ sigma)^2)
+goodness of fit criterion: chi^2/N-m = 1 (reduced chi^2)
+
+*****OUT:  Wed Sep 23 14:41:23 EST 2026
+
+
 
