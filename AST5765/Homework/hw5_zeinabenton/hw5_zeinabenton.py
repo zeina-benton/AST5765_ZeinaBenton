@@ -33,5 +33,11 @@ print("Median of sub-sub-sample =", np.median(sub_mask))
 print("Std Dev of sub-sub-sample =", np.std(sub_mask))
 
 
+print("Problem 3: ")
+from hw5_zeinabenton_supportfunctions import sigrej
+mask = sigrej(array, (5., 5.))
+cleaned_data = array[mask]
+mean = np.mean(cleaned_data)
+print("This is cleaned data mean:",mean)
 
 # %%
