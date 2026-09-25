@@ -41,7 +41,7 @@ def sigrej(data, threshold, mask=None):
     True  True  True  True  True  True  True  True  True  True  True  True
     False  True  True  True 
     print(data[result])
-    >> [102.94964571 100.78131676  98.62252774  99.71517574 105.63355767
+    >>> [102.94964571 100.78131676  98.62252774  99.71517574 105.63355767
     112.34002946 103.86869781  88.78916429  89.92768794  96.3139004
     103.81800466  88.26729565  89.44511362  94.17789326  99.78388179
     86.48067531  78.88877032  97.8708369   95.45838359  99.63327367
@@ -56,12 +56,12 @@ def sigrej(data, threshold, mask=None):
     data = np.random.normal(loc=100, scale=10, size=100)
     result = sigrej(data, (4.,4.))
     print(result)
-    >>  [True  True  True  True  True  True  True  True  True  True  True  True
+    >>> [True  True  True  True  True  True  True  True  True  True  True  True
     True  True  True  True  True  True  True  True  True  True  True  True
     True  True  True  True  True  True  True  True  True  True  True  True
     True  True  True  True  True  True...]
     print(data[result])
-    >> [ 81.05636249  99.29255048 101.77127154  93.70921651  97.38301135
+    >>> [ 81.05636249  99.29255048 101.77127154  93.70921651  97.38301135
     108.65109197  97.06780521  97.84860837  99.188078   112.45383848
     98.32528338  85.93416891 122.31077342 101.54824593 107.83775398
     105.0254307  104.22311965  96.0854888  105.18346834  94.15082564
