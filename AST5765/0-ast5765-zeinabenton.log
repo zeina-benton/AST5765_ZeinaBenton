@@ -1496,3 +1496,7 @@ mean = np.mean(cleaned_data)
 print("This is cleaned data mean:",mean)
 >> This is cleaned data mean: 9996.787020913103
 	It works! The mean from the earlier sub-sub sample is the same as this using the function.
+
+Pausing hw5.
+
+*****OUT: Fri Sep 25 13:07:24 EST 2026
