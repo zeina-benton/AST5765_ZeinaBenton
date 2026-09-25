@@ -1532,4 +1532,25 @@ Git status
 Git add .
 Git commit -m "hw5 code"
 Git push
- F) Screenshot is labeled hw5_zeinabenton_problem4f_screenshot1.png.
+ F) Screenshot is labeled hw5_zeinabenton_problem4f_screenshot1.png and moved into hw5_zeinabenton folder in local computer. 
+ g) Now copy it over stokes requires:
+	git push (local)
+	git pull (stokes repo)
+	cd 
+	cp AST5765_ZeinaBenton/AST5765/Homework/hw5_zeinabenton/hw5_zeinabenton_problem4f_screenshot1.png hw5_zeinabenton
+ H) Then in my local repo I will finish this log and logout, duplicate it and move the copy to hw5_zeinabenton folder and git push local repo. Then in stokes I will:
+Cd AST5765_ZeinaBenton
+Git pull
+Cd
+Then to tar zip the folder in stokes I will do: 
+tar zcf hw5_zeinabenton.tar.gz hw5_zeinabenton
+Cp hw5_zeinabenton.tar.gz AST5765_ZeinaBenton/AST5765/Handin
+Cd AST5765_ZeinaBenton 
+Git push
+Log in with user and git pass
+ D) retrieve file form handin folder in git and submit.
+ I&j)This was explained earlier in g and h.
+
+*****OUT: Fri Sep 25 14:57:57 EST 2026
+
+	
