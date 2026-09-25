@@ -1500,3 +1500,36 @@ print("This is cleaned data mean:",mean)
 Pausing hw5.
 
 *****OUT: Fri Sep 25 13:07:24 EST 2026
+
+*****IN:  Fri Sep 25 14:08:40 EST 2026
+Opened log in class. Going over practicum 3.
+For hw5:
+
+4) a) log into stokes: ssh ze493669@stokes.ist.ucf.edu and enter pw.
+ B)  mkdir hw5_zeinabenton in stokes to make folder.
+ C) Go to git repo in stokes and do git pull to pull updates from local repo.
+	cd
+	cp AST5765_ZeinaBenton/AST5765/Homework/hw5_zeinabenton/hw5_zeinabenton.py hw5_zeinabenton
+	cp AST5765_ZeinaBenton/AST5765/Homework/hw5_zeinabenton/hw5_zeinabenton_supportfunctions.py hw5_zeinabenton
+ D) Running the file now I do
+	cd hw5_zeinabenton
+	python3 hw5_zeinabenton.py
+ERROR: no pandas - fix: python3 -m pip install --user pandas
+	export OPENBLAS_NUM_THREADS=1
+	python3 hw5_zeinabenton.py
+>>> Problem 2: 
+Mean of sub-sample = 10110.071848809606
+Median of sub-sample = 9986.0
+Std Dev of sub-sample = 2369.048756395654
+Mean of sub-sub-sample = 9991.123737373737
+Median of sub-sub-sample = 9986.0
+Std Dev of sub-sub-sample = 97.7209867670139
+Problem 3: 
+This is cleaned data mean: 9991.12373737373
+
+ E) I have committed to git via VScode terminal:
+Git status
+Git add .
+Git commit -m "hw5 code"
+Git push
+ F) Screenshot is labeled hw5_zeinabenton_problem4f_screenshot1.png.
