@@ -1366,3 +1366,14 @@ Std Dev = 12675.679883582281
 
 *****OUT: Thu Sep 24 14:47:30  EST 2026
 
+
+*****IN:  Fri Sep 25 09:30:13 EST 2026
+Opened this log to begin HW5.
+
+1) In local computer's git repo I used mkdir hw5_zeinabenton in Homework folder to create directory for this assignment. Then touch hw5_zeinabenton.py. Then in local:
+Git push
+Then in VScode:
+Git status
+Git pull main origin
+
+
