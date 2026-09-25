@@ -1374,6 +1374,27 @@ Opened this log to begin HW5.
 Git push
 Then in VScode:
 Git status
-Git pull main origin
+Git pull origin main
 
+2) From practicum 3, the sub-sample created from the array prompted was:
+Mean of sub-sample = 10129.562464222756
+Median of sub-sample = 9986.0
+Std Dev of sub-sample = 2638.8478497370047
+
+From sigma_clipping : sub_mask = mask[np.abs(mask - sub_med) < 5*sub_std] showing that mathematically x - median < 5*sigma.
+
+After relating the steps and creating a sub-sub-sample from that:
+sub_mean = np.mean(mask)
+sub_med = np.median(mask)
+sub_std = np.std(mask)
+sub_mask = mask[np.abs(mask - sub_med) < 5*sub_std]
+
+My results were:
+Mean of sub-sub-sample = 9997.050505050505
+Median of sub-sub-sample = 9986.0
+Std Dev of sub-sub-sample = 100.06569798830336
+
+	- This results from sub-sub sample are different as the mean is now less than before (by 11.05). This indicates that the sub-sub sample is symmetric and the extreme bad pixels are now removed. Given the lamda for the Poisson distribution was 10,000, the sqrt(10,000)=100 (so we expect 100 for the std dev here) and this std dev is 100, indicating that the sample is very close and cleaned. However, this method of sigma clipping will not always remove every bad pixel for if it is within 58* sigma it would stay and if its not significantly different from the other pixels. This method rejects outliers, but not a guaranteed fix all.
+
+3)
 
