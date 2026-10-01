@@ -1567,4 +1567,8 @@ Reviewing notebook for lecture 6.
 
 *****IN: Thu Oct  1 13:36:40 EST 2026
 Opened log to begin Practicum 4.
+I first in my git repo used mkdir Practicum4_zeinabenton to create folder.
+Then I downloaded the required hw6_data folder and moved it to said folder.
+After reading through the first page, I then went to #1.
 
+1) I opened terminal in my git repo and used mkdir hw6_zeinabenton. Then touch hw6_zeinabenton.py .While I was at it, I went back to AST5765/Handin and did touch practicum4_zeinabenton.py .
