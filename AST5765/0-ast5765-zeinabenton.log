@@ -1571,4 +1571,6 @@ I first in my git repo used mkdir Practicum4_zeinabenton to create folder.
 Then I downloaded the required hw6_data folder and moved it to said folder.
 After reading through the first page, I then went to #1.
 
-1) I opened terminal in my git repo and used mkdir hw6_zeinabenton. Then touch hw6_zeinabenton.py .While I was at it, I went back to AST5765/Handin and did touch practicum4_zeinabenton.py .
+1) I opened terminal in my git repo and used mkdir hw6_zeinabenton. Then touch hw6_zeinabenton.py .While I was at it, I went back to AST5765/Handin and did touch practicum4_zeinabenton.py .I am also: cp AST5765/Handin/hw6_data AST5765/Homework/hw6_zeinabenton.
+
+
