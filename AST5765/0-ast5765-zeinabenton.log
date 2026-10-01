@@ -1573,4 +1573,50 @@ After reading through the first page, I then went to #1.
 
 1) I opened terminal in my git repo and used mkdir hw6_zeinabenton. Then touch hw6_zeinabenton.py .While I was at it, I went back to AST5765/Handin and did touch practicum4_zeinabenton.py .I am also: cp AST5765/Handin/hw6_data AST5765/Homework/hw6_zeinabenton.
 
+A) import os
+datadir = "/Users/zeinabenton/Desktop/AST5765/AST5765_ZeinaBenton/AST5765_ZeinaBenton-1/AST5765/Handin/Practicum4_zeinabenton/hw6_data/" #This is the path to the data directory
+fext = ".fits" #This is the file extension of the data files
 
+objprefix = "rdpharocor_stars_13s_" #Prefix for the object images for fits compliant
+darkprefix = "rdpharocor_dark_13s_" #Prefix for the dark images for fits compliant
+
+B) objfile = []
+darkfile = []
+
+for filename in sorted(os.listdir(datadir)):
+    if filename.endswith(fext):
+        root = filename[:-len(fext)]
+
+        if filename.startswith(objprefix):
+            objfile.append(root)
+
+        elif filename.startswith(darkprefix):
+            darkfile.append(root)
+
+C) print("Data directory:", datadir)
+print("FITS extension:", fext)
+print("Last target filename:", objfile[-1]) #Last target filename
+print("Last dark filename:", darkfile[-1]) #Last dark filename
+>>> Data directory: /Users/zeinabenton/Desktop/AST5765/AST5765_ZeinaBenton/AST5765_ZeinaBenton-1/AST5765/Handin/Practicum4_zeinabenton/hw6_data/
+FITS extension: .fits
+Last target filename: rdpharocor_stars_13s_9
+Last dark filename: rdpharocor_dark_13s_2
+
+D) import astropy.io.fits as fits #import the fits module from astropy.io
+data = fits.getdata(datadir + objfile[0] + fext) #Read in the first object image (0th index)
+ny, nx = data.shape #data array size
+print("Data array size:", ny, nx) 
+>>> Data array size: 1024 1024
+
+E) nobj = len(objfile) #Number of object images
+ndark = len(darkfile) #Number of dark images
+print("Number of object images:", nobj)
+print("Number of dark images:", ndark)
+#This should not be hardcoded, because the number of images may change in the future.
+>>>Number of object images: 9
+Number of dark images: 2
+Number of image rows: 1024
+Number of image columns: 1024
+
+Pausing now.
+*****OUT: Thu Oct  1 13:54:28 EST 2026
