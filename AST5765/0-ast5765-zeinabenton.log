@@ -1620,3 +1620,32 @@ Number of image columns: 1024
 
 Pausing now.
 *****OUT: Thu Oct  1 13:54:28 EST 2026
+
+
+****IN:  Fri Oct  2 10:22:24 EST 2026
+Opened log. Reviewing practicum.
+Section of flat(?) should be negated b/c of blurring.
+One line reading: in data, header = fits.getdata(filename, header=True)
+Can sort by creation time.
+
+*Resumed practicum 4 problem 3 in class.
+Extra credit is written in Practicum4_zeinabenton.py too.
+
+#Extra Credit --------
+#Q: Why not use TIME-OBS?
+
+#TIME-OBS is the time of the observation, but DATE-OBS gives the full date and time of the observation. 
+#Using DATE-OBS is generally more informative for understanding when the observations were made, especially if you want to compare observations across different dates.
+#The data of an observation tells us things like weather conditions, seasonal effects, and other factors that might influence the data.
+#Time doesn't tell more than the time of day that cannot help with those same factors.
+#Note here that some headers may include both DATE-OBS and TIME-OBS too since TIME-OBS is outdated for some astronomical data formats.
+
+
+*Working in class
+MLM Maximum Likehood Method:
+Assuming 1) gaussian distribution 2) independently distributed and correlated in time
+
+
+*****OUT:  Fri Oct  2 14:31:41 EST 2026
+
+
