@@ -1736,6 +1736,51 @@ print("After dark subtraction:", objdata_darksub[0, 217, 184])
 
 3) Hw6 pdf says question 4 but there was no 3rd question, so I am writing it as a 3.
 I am going to push this to my local git repo.
+Git pull origin main
+Git status
+Git add .
+ Git commit -m "hw6 code"
+Git push
 
+Then for stokes: 
+a) First I logged into the UCF VPN. Then:
+ssh ze493669@stokes.ist.ucf.edu and log in.
+
+B) mkdir hw6_zeinabenton
+
+C)
+cd AST5765_ZeinaBenton
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw6_zeinabenton/hw6_zeinabenton.py hw6_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw6_zeinabenton/hw6_zeinabenton_supportfunctions.py hw6_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw6_zeinabenton/hw6_zeinabenton_prob2_graph1.fits hw6_zeinabenton
+cp -r AST5765_ZeinaBenton/AST5765/Homework/hw6_zeinabenton/hw6_data hw6_zeinabenton/
+
+D) to run: 
+cd hw6_zeinabenton
+python3 hw6_zeinabenton.py
+Error about version, fix: export OPENBLAS_NUM_THREADS=1
+Run again  python3 hw6_zeinabenton.py - had to import fits python3 -m pip install astropy
+
+E) Everything is up to date in GitHub aside from the log. I've explained multiple times how I commit to git via: git status, git add . , git commit -m,  git pull --rebase origin main, git push origin main. 
+
+f) The screenshot of my history is under hw4_zeinabenton_problem4f_screenshot1.png. To copy that over,
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/hw4_zeinabenton_problem4f_screenshot1.png hw4_zeinabenton
+
+G)Content already copies as stated earlier, only log missing.
+
+H) To copy the log I will, close it out. Then:
+First duplicate log, move it into hw4_zeinabenton
+Cd AST5765_ZeinaBenton
+Git pull
+Cd
+cp AST5765_ZeinaBenton/AST5765/Homework/hw4_zeinabenton/0-ast5765-zeinabenton.log hw4_zeinabenton
+tar zcf hw4_zeinabenton.tar.gz hw4_zeinabenton ( saves incgeneral stokes directory)
+Cp hw4_zeinabenton.tar.gz AST5765_Zeinabenton/AST5765/Handin (local computer /github)
+Git status
+Git add . 
+Git push
+Submit file to web courses
 
 
