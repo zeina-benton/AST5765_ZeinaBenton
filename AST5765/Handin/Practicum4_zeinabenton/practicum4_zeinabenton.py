@@ -6,7 +6,7 @@
 print("Problem 2")
 #a
 import os
-datadir = "/Users/zeinabenton/Desktop/AST5765/AST5765_ZeinaBenton/AST5765_ZeinaBenton-1/AST5765/Handin/Practicum4_zeinabenton/hw6_data/" #This is the path to the data directory
+datadir = "hw6_data/" #This is the path to the data directory
 fext = ".fits" #This is the file extension of the data files
 
 objprefix = "rdpharocor_stars_13s_" #Prefix for the object images for fits compliant
