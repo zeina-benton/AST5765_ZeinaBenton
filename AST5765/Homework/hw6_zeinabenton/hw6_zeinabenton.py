@@ -12,7 +12,7 @@ print("Problem 2")
 
 #b
 #Retrieve practicum 4 information:
-datadir = "/Users/zeinabenton/Desktop/AST5765/AST5765_ZeinaBenton/AST5765_ZeinaBenton-1/AST5765/Homework/hw6_zeinabenton/hw6_data/" #This is the path to the data directory
+datadir = "hw6_data/" #This is the path to the data directory
 fext = ".fits" #This is the file extension of the data files
 objprefix = "rdpharocor_stars_13s_" #Prefix for the object images for fits compliant
 darkprefix = "rdpharocor_dark_13s_" #Prefix for the dark images for fits compliant
