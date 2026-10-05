@@ -1648,4 +1648,13 @@ Assuming 1) gaussian distribution 2) independently distributed and correlated in
 
 *****OUT:  Fri Oct  2 14:31:41 EST 2026
 
+*****IN: Sat Oct  3 10:21:36 EST 2026
+
+Starting hw6.
+1) I assume hw7 listed here is an error.
+I opened terminal in my git repo and used mkdir hw6_zeinabenton. Then touch hw6_zeinabenton.py and cp AST5765/Handin/hw6_data AST5765/Homework/hw6_zeinabenton from practicum 4.
+
+2) a) in git repo terminal: touch hw6_zeinabenton_supportufunctions.py.
+
+
 
