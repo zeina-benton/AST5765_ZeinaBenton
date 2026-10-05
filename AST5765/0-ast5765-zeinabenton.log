@@ -1654,7 +1654,88 @@ Starting hw6.
 1) I assume hw7 listed here is an error.
 I opened terminal in my git repo and used mkdir hw6_zeinabenton. Then touch hw6_zeinabenton.py and cp AST5765/Handin/hw6_data AST5765/Homework/hw6_zeinabenton from practicum 4.
 
-2) a) in git repo terminal: touch hw6_zeinabenton_supportufunctions.py.
+2) a) in git repo terminal: touch hw6_zeinabenton_supportfunctions.py.
+I copied and pasted all the code needed from practicum 4.
+My function: 
+def median_stack_method(data):
+    """
+    This function allows you to median-combine the images in
+    a single function call, without loops.
+
+    Parameters
+    ----------
+    data: 3D array of images to be median-combined
+
+    Returns
+    -------
+    median_combined: 2D array of the median-combined image
+
+    Examples
+    --------
+    data = np.random.normal(loc=100, scale=10, size=(5, 100, 100))
+    median_combined = median_stack_method(data)
+    print(median_combined.shape)
+    >> (100, 100)
+
+    data = darks # 3D array of dark images
+    median_combined = median_stack_method(darks)
+    print(median_combined.shape)
+    >> (100, 100)
+
+    """
+    import numpy as np
+    median_combined = np.median(data, axis=0) #Median combine the images along the first axis (the image index)
+    return median_combined
+
+
+B) from hw6_zeinabenton_supportfunctions import median_stack_method #Import the median_stack_method function
+dark_median = median_stack_method(darkdata) #Median combine the dark images
+
+print("Median dark pixel [217, 184]:", dark_median[217, 184])
+
+C) dark_header = fits.getheader(os.path.join(datadir, darkfile[0] + fext))
+dark_header.add_history("Dark images were median-combined using np.median with axis=0.") #.add_history adds a history entry to the header
+
+
+D) fits.writeto( # Write the median-combined dark image to a new fits file
+    os.path.join(datadir, "dark_13s_med.fits"),
+    dark_median,
+    header=dark_header,
+    overwrite=True
+)
+
+#Additional check here:
+saved_data, saved_header = fits.getdata(
+    os.path.join(datadir, "dark_13s_med.fits"),
+    header=True
+)
+
+print("Shape:", saved_data.shape)  # Should be (1024, 1024)
+print("Data matches:", np.array_equal(saved_data, dark_median))  # Should be True
+print("HISTORY:", saved_header["HISTORY"])  # Should show note
+
+E) 
+#Subtract the median dark image from each object image
+objdata_darksub = objdata - dark_median[np.newaxis, :, :]  #np.newaxis is used to add a new axis to dark_median so that it can be broadcasted across the object images
+#Write first frame to file and save
+fits.writeto(
+    os.path.join(datadir, "obj_darksub_13s_0.fits"),
+    objdata_darksub[0],
+    header=objhead,
+    overwrite=True
+)
+#Save fits file in homework file to proper formatting 
+fits.writeto(
+    "hw6_zeinabenton_prob2_graph1.fits",
+    objdata_darksub[0],
+    header=objhead,
+    overwrite=True
+)
+print("Before dark subtraction:", objdata[0, 217, 184]) #3D, first 0 means first image, 217 is row, 184 is column
+print("After dark subtraction:", objdata_darksub[0, 217, 184])
+
+3) Hw6 pdf says question 4 but there was no 3rd question, so I am writing it as a 3.
+I am going to push this to my local git repo.
 
 
 
