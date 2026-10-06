@@ -1801,5 +1801,11 @@ Opened log for a bit to start hw7.
 1) Opened local git repo terminal: mkdir hw7_zeinabenton
 touch hw7_zeinabenton.py.
 
-2)
+2) a) https://arxiv.org/abs/0705.0993
+Knutson and colleagues in the paper "A map of the day-night contrast of the extrasolar planet
+HD 189733b" discussed the importance of observing star-planet systems that periodically eclipse to estimate dayside temperatures. In doing so, the key science question, "can the atmosphere transport energy incident to the plant's surface" can be investigated. Knutson and colleagues observed HD 189733, the closest eclipsing planetary system, and found the estimated dayside brightness to  973±33 K with a max at 1212±11 K at 8 µm. A hot spot shift was detected at  16±6
+degrees before opposition and a secondary eclipse occurs at  120±24s. 
+
+
+****OUT: Tue Oct  6 08:46:18 EST 2026
 
