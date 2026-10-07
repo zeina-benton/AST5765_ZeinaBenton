@@ -1803,9 +1803,30 @@ touch hw7_zeinabenton.py.
 
 2) a) https://arxiv.org/abs/0705.0993
 Knutson and colleagues in the paper "A map of the day-night contrast of the extrasolar planet
-HD 189733b" discussed the importance of observing star-planet systems that periodically eclipse to estimate dayside temperatures. In doing so, the key science question, "can the atmosphere transport energy incident to the plant's surface" can be investigated. Knutson and colleagues observed HD 189733, the closest eclipsing planetary system, and found the estimated dayside brightness to  973±33 K with a max at 1212±11 K at 8 µm. A hot spot shift was detected at  16±6
-degrees before opposition and a secondary eclipse occurs at  120±24s. 
+HD 189733b" discussed the importance of observing star-planet systems that periodically eclipse to estimate dayside temperatures. In doing so, the key science question, "can the atmosphere transport energy incident to the planet's surface" can be investigated. Knutson et al. observed HD 189733, the closest eclipsing planetary system, and estimated dayside brightness to 973±33 K with a max at 1212±11 K at 8 µm. A hot spot shift was detected at  16±6
+degrees before opposition and a secondary eclipse occurring at 120±24s. 
+
+B) https://arxiv.org/abs/0802.0845
+Using Spitzer Space Telescope series photometry, Charbonneau et al. estimated the relative eclipse depth of HD 189733 to 5 distinct bands with planet-to-star flux ratios to be 0.256 +/- 0.014% (3.6 microns), 0.214 +/- 0.020% (4.5 microns), 0.310 +/- 0.034% (5.8 microns), 0.391 +/- 0.022% (8.0 microns), and 0.598 +/- 0.038% (24 microns). They detected emission near 4 microns from an opacity window, disagreeing with a Plank spectrum. Their data supports the idea that hot Jupiter atmospheres diverge into two classes with a thermal inversion layer for strong irradiated objects. 
 
 
 ****OUT: Tue Oct  6 08:46:18 EST 2026
+
+
+*****IN:  Wed Oct  7 14:34:25 EST 2026 
+Opened log for class, going over HW6.
+For history write "the comment" + time.strftime('.....' + username
+
+From hw6_zeinabenton import * (needed for hw7)
+
+Is moon made of green cheese? TPS
+What are the effects on Earth if moon is cheese?
+What changes for the gravity of the moon made of cheese as rock is more dense than cheese?
+Test chemical composition (isotopes) of the cheese! Send a mission to the cheese moon to collect samples to test.
+Problems that could arise is that the cheese may be affecting the atmosphere so therefore the spacecraft could not enter for sample collection! Possibly solve by in-situ but further away. 
+Also we need to determine the age of the cheese, also via chemical analysis (isotopes), to see if it will collapse to decide a timeline for said mission plan. 
+
+****OUT: Wed Oct  7 14:36:22 EST 2026
+
+
 
