@@ -1796,7 +1796,7 @@ Submit file to web courses
 
 
 *****IN:  Tue Oct  6 08:43:25 EST 2026
-Opened log for a bit to start hw7.
+Opened log for a bit to start HW 7.
 
 1) Opened local git repo terminal: mkdir hw7_zeinabenton
 touch hw7_zeinabenton.py.
@@ -1805,9 +1805,11 @@ touch hw7_zeinabenton.py.
 Knutson and colleagues in the paper "A map of the day-night contrast of the extrasolar planet
 HD 189733b" discussed the importance of observing star-planet systems that periodically eclipse to estimate dayside temperatures. In doing so, the key science question, "can the atmosphere transport energy incident to the planet's surface" can be investigated. Knutson et al. observed HD 189733, the closest eclipsing planetary system, and estimated dayside brightness to 973±33 K with a max at 1212±11 K at 8 µm. A hot spot shift was detected at  16±6
 degrees before opposition and a secondary eclipse occurring at 120±24s. 
+From the paper, I learned that HD 189733b is a hot Jupiter whose atmosphere efficiently transports heat from its dayside to its nightside. The hot spot directly faces the star, consistent with atmospheric winds transporting heat eastward. The 8-micron brightness temperatures range from 973 ± 33 K to 1212 ± 11 K, indicating a warm nightside. Its secondary eclipse occurred 120 ± 24 seconds later than predicted.
 
 B) https://arxiv.org/abs/0802.0845
-Using Spitzer Space Telescope series photometry, Charbonneau et al. estimated the relative eclipse depth of HD 189733 to 5 distinct bands with planet-to-star flux ratios to be 0.256 +/- 0.014% (3.6 microns), 0.214 +/- 0.020% (4.5 microns), 0.310 +/- 0.034% (5.8 microns), 0.391 +/- 0.022% (8.0 microns), and 0.598 +/- 0.038% (24 microns). They detected emission near 4 microns from an opacity window, disagreeing with a Plank spectrum. Their data supports the idea that hot Jupiter atmospheres diverge into two classes with a thermal inversion layer for strong irradiated objects. 
+Using Spitzer Space Telescope series photometry, Charbonneau et al. estimated the relative eclipse depth of HD 189733 to 5 distinct bands with planet-to-star flux ratios to be 0.256 +/- 0.014% (3.6 microns), 0.214 +/- 0.020% (4.5 microns), 0.310 +/- 0.034% (5.8 microns), 0.391 +/- 0.022% (8.0 microns), and 0.598 +/- 0.038% (24 microns). They detected emission near 4 microns from an opacity window, disagreeing with the Plank spectrum and thus revealing atmospheric differences between HD 189733 and HD 209458b, a second researched exoplanet. Their data supports the idea that hot Jupiter atmospheres diverge into two classes with a thermal inversion layer for strong irradiated objects. 
+From this paper I learned that the target HD 189733b’s dayside emission is best explained by an atmosphere without a temperature inversion. Its infrared emission deviates from a blackbody /Plank spectrum. Its emission near 4 microns is consistent with an opacity window. 
 
 
 ****OUT: Tue Oct  6 08:46:18 EST 2026
@@ -1825,8 +1827,24 @@ What changes for the gravity of the moon made of cheese as rock is more dense th
 Test chemical composition (isotopes) of the cheese! Send a mission to the cheese moon to collect samples to test.
 Problems that could arise is that the cheese may be affecting the atmosphere so therefore the spacecraft could not enter for sample collection! Possibly solve by in-situ but further away. 
 Also we need to determine the age of the cheese, also via chemical analysis (isotopes), to see if it will collapse to decide a timeline for said mission plan. 
+From the paper I learned that HD 189733b appears deep blue at visible wavelengths because its dayside reflects more blue light than light at longer wavelengths. It's geometric albedo is 0.40 ± 0.12 at 290–450 nm and it's wavelength dependence suggests optically thick, reflective clouds on the dayside (with sodium).
 
 ****OUT: Wed Oct  7 14:36:22 EST 2026
+
+*****IN:  Thu Oct  8 17:14:46 EST 2026
+Opened log to continue HW 7.
+
+2)
+C) https://arxiv.org/abs/1307.3239
+Evans et al. investigated hot Jupiter HD189733b for a secondary eclipse observation using the Space Telescope Imaging Spectrograph on the Hubble Telescope. They measured the albedo at Ag = 0.40 \pm 0.12 across 290-450nm and Ag < 0.12 across 450-570nm at 1-sigma confidence. They then predicted albedos from three hot Jupiter models and found that the albedo decreasing toward longer wavelengths implies dayside optically thick reflective clouds. These results demonstrate the potential of secondary eclipse observations and more information is needed for more empirical constraints on HD 189733b’s atmosphere.
+
+D)https://arxiv.org/abs/2410.22398
+Using the Planetary Atmospheric Tool for Observer Noobs (PLATON), a computational program that contains NIRCam Grism Time Series observations, Zhang et al. presents 2.4–5.0 µm JWST/NIRCam emission spectrum of HD 189733b using their developed program to retrieve atmospheric parameters  for one eclipse in each of the F322W2 (2.4–3.95 µm) and F444W (3.90–5.00 µm)bandpasses. Their results prove that PLATON's advancements are suitable for the JWST observation era based on the retrieval of the necessary transmission and emission spectrums. However, they note factors such as the cloud parameterization, non-equilibrium chemistry, the definition of metallicity and C/O are may affect data accuracy.
+While this paper was data analysis dense, I learned that HD 189733b has an atmosphere enriched in heavy elements like H₂O, CO₂, CO, and H₂S. It is depleted in methane at the terminator, the boundary between day and night probed during transit. 
+
+3) Code will be written in hw7_zeinabenton.py.
+
+
 
 
 
