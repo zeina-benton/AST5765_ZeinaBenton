@@ -1988,6 +1988,28 @@ print(f"Planet radius error: {planet_radius_error:.6f} solar radii")
 >>> Planet radius error: 0.010979 solar radii
 
 4) Test in stokes:
+ a) logged into stokes via ssh ze493669@stokes.ist.ucf.edu and password.
+ B) mkdir hw7_zeinabenton to make folder.
+ C) I had to do git pull to update my stokes git hub repo.
+	Then I did: 
+cp AST5765_ZeinaBenton/AST5765/Homework/hw7_zeinabenton/hw7_zeinabenton_supportfunction.py hw7_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw7_zeinabenton/hw7_zeinabenton.py hw7_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw7_zeinabenton/hw7_synthetic_transit_lightcurve.csv hw7_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw7_zeinabenton/hw7_zeinabenton_prob2_graph2.png hw7_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw7_zeinabenton/hw7_zeinabenton_prob2_plot1.png hw7_zeinabenton
+
+Then to test, I did  python3 hw7_zeinabenton.py then  export OPENBLAS_NUM_THREADS=1
+>>> Problem 3:
+Starting parameters: [-3.469446951953614e-18, 0.019839679358717437, 0.010880180597369726]
+Fitted parameters: [-3.46944695e-18  1.98396794e-02  1.08801806e-02]
+Transit center: -0.000000 days
+Transit width: 0.019840 days
+Transit height/depth: 0.010880
+Planet radius: 0.118911 solar radii
+Planet radius error: 0.010979 solar radii
+	Then submitting to web courses after copying over log in both stokes and local git repo.
+
+*****OUT:  Thu Oct  8 20:33:38 EST 2026
 
 
 
