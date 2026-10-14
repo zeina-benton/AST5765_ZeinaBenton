@@ -2116,16 +2116,16 @@ print("Data matches:", np.array_equal(
     saved_data, normmedcomb_result, equal_nan=True
 ))  # Expected: True
 
-*****OUT:  Wed Oct 14 12:47:47 EST 2026
-
-
 
 
 Beginning hw8.
 
 1) Listed in practicum 5:
 mkdir hw8_zeinabenton in AST5765/Homework and touch hw8_zeinabenton.py
-Practicum 5 and support file is copied over for calling the functions.
+Practicum 5/support file, hw6/support file, and hw7/support file is copied over for calling the functions.
+
+*****OUT: Wed Oct 14 13:38:26 EST 2026
+
 
 
 
