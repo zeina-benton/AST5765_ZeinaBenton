@@ -2121,6 +2121,12 @@ print("Data matches:", np.array_equal(
 
 
 
+Beginning hw8.
+
+1) Listed in practicum 5:
+mkdir hw8_zeinabenton in AST5765/Homework and touch hw8_zeinabenton.py
+Practicum 5 and support file is copied over for calling the functions.
+
 
 
 
