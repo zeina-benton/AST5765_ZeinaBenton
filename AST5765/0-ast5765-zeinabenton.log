@@ -2026,8 +2026,98 @@ Opened log to begin practicum 5.
 Then mkdir hw8_zeinabenton in AST5765/Homework and touch hw8_zeinabenton.py.
 To copy hw7 info, cp -r AST5765/Homework/hw7_zeinabenton Practicum5_zeinabenton
 
-2) 
+2) def normmedcomb(arr, keyword=True, coordinates=None):
+    """
+    This function implements normalized median combination method.
+    
+    Parameters
+    ----------
+    arr : ndarray
+        3D array of dark-subtracted sky images.
+    keyword : bool, optional
+        False: normalize using the whole image.
+        True: normalize using the supplied coordinates.
+    coordinates : tuple, optional
+        Region (y_1, x_1, y_2, x_2), required when keyword=True.
 
+    Returns
+    -------
+    normmedcomb : 2D array
+        Normalized median combination of the input array.
+    
+    Example
+    -------
+    >>> arr = np.random.rand(5, 100, 100)  # Example 3D array
+    >>> result = normmedcomb(arr, keyword=True, coordinates=(10, 10, 90, 90))
+
+    Note
+    -----
+    The normalization region is the region from which the normalization factor is calculated in each frame.
+
+    """
+    # Check if the input array is 3D
+    if arr.ndim != 3:
+        raise ValueError("Input array must be 3D.")
+
+    n_frames, height, width = arr.shape
+
+    if keyword is False:
+        y_1, x_1, y_2, x_2 = (0, 0, height, width)
+
+    elif keyword is True:
+        if coordinates is None:
+            raise ValueError("Supply coordinates when keyword=True.")
+        y_1, x_1, y_2, x_2 = coordinates
+
+    else:
+        raise ValueError("Keyword must be True or False.")
+
+    normalized_frames = np.zeros_like(arr, dtype=float) #Empty array to store normalized frames
+    norm_factors = np.zeros(n_frames)
+
+    for i in range(n_frames):
+        norm_factors[i] = np.median(arr[i, y_1:y_2, x_1:x_2])
+
+        if not np.isfinite(norm_factors[i]) or norm_factors[i] == 0:
+            raise ValueError("Normalization factor must be finite and nonzero.")
+
+        normalized_frames[i] = arr[i] / norm_factors[i]
+
+    combined = np.median(normalized_frames, axis=0)
+
+    return combined, norm_factors
+
+3) I had to copy hw7, hw6 and hw6 data. Unclear what is being used as all are mentioned.
+Calling hw6 code and hw7 code:
+
+#New code here:
+normmedcomb_result, norm_factors = normmedcomb(objdata_darksub, keyword=True, coordinates=(225, 225, -225, -225)) #Normalized median combination of the dark-subtracted object images
+#                            hw6 dark-subtracted images                       y1, x1, y2, x2
+print("Combined image shape:", normmedcomb_result.shape)
+print("Normalization factors:", norm_factors)
+
+Problem 3
+Combined image shape: (1024, 1024)
+Normalization factors: [10864.  11057.  10536.  10558.5 11046.  10623.   9916.5  9916.5  9859.5]
+
+fits.writeto(
+    os.path.join(datadir, "sky_13s_mednorm.fits"),
+    normmedcomb_result,
+    header=objhead,
+    overwrite=True
+)
+
+#Check fits file
+saved_data, saved_header = fits.getdata(
+    os.path.join(datadir, "sky_13s_mednorm.fits"),
+    header=True
+)
+print("Shape:", saved_data.shape)  # Expected: (1024, 1024)
+print("Data matches:", np.array_equal(
+    saved_data, normmedcomb_result, equal_nan=True
+))  # Expected: True
+
+*****OUT:  Wed Oct 14 12:47:47 EST 2026
 
 
 
