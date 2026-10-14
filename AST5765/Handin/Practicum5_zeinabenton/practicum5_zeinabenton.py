@@ -74,9 +74,10 @@ normmedcomb_result, norm_factors = normmedcomb(objdata_darksub, keyword=True, co
 #                            hw6 dark-subtracted images      , we want coordinates       ,   y1, x1, y2, x2
 print("Combined image shape:", normmedcomb_result.shape)
 print("Normalization factors:", norm_factors)
+
 """
-Normalization factors: [10864.  11057.  10536.  
-10558.5 11046.  10623.   9916.5  9916.5  9859.5]
+Normalization factors: [10864. 11057. 10536. 
+10559. 11046. 10623.  9916.  9916.  9859.]
 
 """
 fits.writeto(
