@@ -2098,8 +2098,7 @@ print("Normalization factors:", norm_factors)
 
 Problem 3
 Combined image shape: (1024, 1024)
-Normalization factors: [10864.  11057.  10536.  10558.5 11046.  10623.   9916.5  9916.5  9859.5]
-
+Normalization factors: [10864. 11057. 10536. 10559. 11046. 10623.  9916.  9916.  9859.]
 fits.writeto(
     os.path.join(datadir, "sky_13s_mednorm.fits"),
     normmedcomb_result,
