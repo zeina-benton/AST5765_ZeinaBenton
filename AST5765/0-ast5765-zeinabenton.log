@@ -2022,8 +2022,10 @@ sigmaRp = quadrature of that formula above
 *****IN: Wed Oct 14 11:54:17 EST 2026
 Opened log to begin practicum 5.
 
-I first created mkdir Practicum5_zeinabenton folder and touch practicum5_zeinabenton.py. Then git pull in Vscode (in AST5765/Handin)
+1) I first created mkdir Practicum5_zeinabenton folder and touch practicum5_zeinabenton.py. Then git pull in Vscode (in AST5765/Handin)
 Then mkdir hw8_zeinabenton in AST5765/Homework and touch hw8_zeinabenton.py.
+To copy hw7 info, cp -r AST5765/Homework/hw7_zeinabenton Practicum5_zeinabenton
+2) 
 
 
 
