@@ -2117,7 +2117,6 @@ print("Data matches:", np.array_equal(
 ))  # Expected: True
 
 
-
 Beginning hw8.
 
 1) Listed in practicum 5:
@@ -2125,6 +2124,187 @@ mkdir hw8_zeinabenton in AST5765/Homework and touch hw8_zeinabenton.py
 Practicum 5/support file, hw6/support file, and hw7/support file is copied over for calling the functions.
 
 *****OUT: Wed Oct 14 13:38:26 EST 2026
+
+
+*****IN: Wed Oct 14 14:38:19 EST 2026
+Opened log, working on in class assignment.
+
+Read FITS file "flat.0005bsub.fits". This is a flat-field image (i.e. an image that lets us assess the non-uniformities in the detector's sensitivity). It has already had the bias level subtracted. Your goal is to find the mode, since that's what would be used later on to normalize this image.
+
+A. Read in the FITS file with the appropriate command.
+B. Make a histogram with matplotlib or numpy's "histogram" routine using a bin width of 5. This gives you a 1-D array of pixel values and a 1-D array of frequencies. The pixel values array will have 1 more element than the frequencies array, so you should correct for that.
+C. Find the peak of this histogram. Your answer should be near a pixel value of 42800. Fitting the entire histogram is unnecessary, since we really only want the peak. So grab out a part of each of the two arrays that correspond to pixel values within say 250 of the peak.
+Added for clarity: this isn't asking to use ±250 index numbers from the location of the peak, it's literally ±250 numbers from the location of the peak. So it should be approximately 42400 to 43100.
+D. Make a plot of just this part of the histogram.
+E. You should be able to tell by inspection of that plot that neither a Gaussian nor a parabola would give an adequate fit. The histogram simply doesn't have a shape like those functions. So a better option is a third-order polynomial, a cubic.
+You can either code your own polynomial funct using scipy optimization or use numpy's polyfit (https://numpy.org/doc/stable/reference/generated/numpy.polyfit.html) and polyval (https://numpy.org/doc/stable/reference/generated/numpy.polyval.html#numpy.polyval) functions to find and plot the best-fitting cubic polynomial.
+F. What is the pixel value that corresponds to the peak of that best-fitting polynomial?
+G. Repeat the plot from part E, but this time also plot the best-ftting cubic polynomial on top of the histogram. And this time, save this plot. Does the polynomial do a good job of tracing out the histogram?
+From here, you would normalize the flat field by the answer you get for part G, then do this for all the flat-fields, and then combine them all into a master flat.
+
+1)im = fits.getdata('flat.0005bsub.fits')
+pim = plt.imshow(im,cmap = 'gray')
+plt.colorbar(pim)
+ 
+2)#From above example
+binwid = 5.0
+usethesebins = getbinbounds(binwid, np.min(im), np.max(im))
+resuhist = np.histogram(im, bins=usethesebins)
+histvals_b = resuhist[0]
+histbins_b = resuhist[1]
+
+print("Check the sizes of these two arrays:")
+print(histvals_b.size, histbins_b.size)
+
+# Convert bin edges to centers so both arrays have the same length
+histbins_b = (histbins_b[1:] + histbins_b[:-1]) / 2.
+
+print("Now recheck:")
+print(histvals_b.size, histbins_b.size)
+
+plt.figure(figsize=(6, 4))
+plt.plot(histbins_b, histvals_b)
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.xlim(
+    np.median(im) - 2.0 * np.std(im),
+    np.median(im) + 2.0 * np.std(im)
+)
+plt.title("Histogram for Flat")
+plt.show()
+
+3)
+"""
+AI prompt: I need to find gaussian peak given constraints.
+
+>>>from astropy import modeling
+
+# Find the histogram peak
+mostfreq = np.argmax(histvals)
+peak = histbins[mostfreq]
+print("Histogram peak:", peak)
+
+# Select pixel values within ±250 of the peak, not array indices
+select = np.abs(histbins - peak) <= 250
+peakbins = histbins[select]
+peakvals = histvals[select]
+"""
+
+from astropy import modeling
+
+# Find the histogram peak
+mostfreq = np.argmax(histvals_b)
+peak = histbins_b[mostfreq]
+print("Histogram peak:", peak)
+
+# Select pixel values within ±250 of the peak, not array indices
+select = np.abs(histbins_b - peak) <= 250
+peakbins = histbins_b[select]
+peakvals = histbins_b[select]
+
+# Fit only the selected portion : earlier example
+fitter = modeling.fitting.LevMarLSQFitter()
+model = modeling.models.Gaussian1D(
+    amplitude=np.max(peakvals),
+    mean=peak,
+    stddev=100
+)
+fitted_model = fitter(model, peakbins, peakvals)
+print(fitted_model)
+
+
+>>>
+Histogram peak: 42848.227
+Model: Gaussian1D
+Inputs: ('x',)
+Outputs: ('y',)
+Model set size: 1
+Parameters:
+        amplitude             mean              stddev      
+    ------------------ ------------------ ------------------
+    48892.481812335114 54155.150453822156 22010.873672805425
+
+4) plt.figure(figsize=(6, 4))
+plt.plot(peakbins, peakvals)
+plt.plot(peakbins, fitted_model(peakbins),
+         color='black', label='Gaussian fit')
+plt.plot([peak, peak], [1650, np.max(peakvals)],
+         ':', color='blue', label='Histogram peak')
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.xlim(peak - 250, peak + 250)
+plt.title("Histogram for Flat — Peak")
+plt.legend()
+plt.show()
+
+5)"""
+AI prompt:
+How to histogram plot using third-order polynomial fit  from a gaussian.
+>>>
+model = modeling.models.Polynomial1D(degree=3) #3rd order polynomial model
+fitter = modeling.fitting.LinearLSQFitter() #earlier example
+fitted_poly = fitter(model, peakbins - peak, peakvals)
+
+x_poly = np.linspace(peakbins.min(), peakbins.max(), 10000)
+y_poly = fitted_poly(x_poly - peak)
+
+poly_peak = x_poly[np.argmax(y_poly)]
+"""
+
+model = modeling.models.Polynomial1D(degree=3) #3rd order polynomial model
+fitter = modeling.fitting.LinearLSQFitter() #earlier example
+fitted_poly = fitter(model, peakbins - peak, peakvals)
+
+x_poly = np.linspace(peakbins.min(), peakbins.max(), 10000)
+y_poly = fitted_poly(x_poly - peak)
+poly_peak = x_poly[np.argmax(y_poly)]
+
+plt.figure(figsize=(6, 4))
+plt.plot(peakbins, peakvals)
+plt.plot(peakbins, fitted_poly(peakbins - peak),
+         color='black', label='Third-order polynomial')
+plt.plot([poly_peak, poly_peak], [1650, np.max(peakvals)],
+         ':', color='blue', label='Histogram peak')
+
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.xlim(peak - 250, peak + 250)
+plt.title("Histogram for Flat — Polynomial Fit")
+plt.legend()
+plt.show()
+
+print("3rd Order Poly peak value:", poly_peak)
+
+6)
+model = modeling.models.Polynomial1D(degree=4) 
+fitter = modeling.fitting.LinearLSQFitter() 
+fitted_poly = fitter(model, peakbins - peak, peakvals)
+
+x_poly = np.linspace(peakbins.min(), peakbins.max(), 10000)
+y_poly = fitted_poly(x_poly - peak)
+cubic_peak = x_poly[np.argmax(y_poly)]
+
+plt.figure(figsize=(6, 4))
+plt.plot(peakbins, peakvals)
+plt.plot(peakbins, fitted_poly(peakbins - peak),
+         color='black', label='Cubic')
+plt.plot([cubic_peak, cubic_peak], [1650, np.max(peakvals)],
+         ':', color='blue', label='Histogram peak')
+
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.xlim(peak - 250, peak + 250)
+plt.title("Histogram for Flat — Cubic Fit")
+plt.legend()
+plt.savefig("Flat_histogram_cubic.png")
+plt.show()
+
+print("Cubic peak value:", cubic_peak)
+
+
+
+
+*****OUT:  Wed Oct 14 15:35:01 EST 2026
 
 
 
