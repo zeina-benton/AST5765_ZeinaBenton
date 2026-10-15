@@ -2301,10 +2301,126 @@ plt.show()
 
 print("Cubic peak value:", cubic_peak)
 
-
-
-
 *****OUT:  Wed Oct 14 15:35:01 EST 2026
+
+
+
+*****IN: Thu Oct 15 16:19:34 EST 2026
+Opened log to resume hw8. 
+
+2) def skycormednorm(arr_1, arr_2, keyword=None):
+    """
+    This function implements sky subtraction using your normalized sky frame.
+    
+    Parameters
+    ----------
+    arr_1 : ndarray
+        2D array of object frame.
+    arr_2 : ndarray
+        2D of normalized sky frame
+    keyword : tuple, optional
+        Normalization region: ((y1, x1), (y2, x2)).
+        Default: the whole object frame.
+  
+    Returns
+    -------
+    skycormednorm : 2D array
+        De-normalized the sky, subtract it from the object frame, and returns the resulting sky-subtracted frame.
+    
+    Example
+    -------
+    >>> corrected = skycormednorm(arr_1, arr_2)
+    >>> corrected = skycormednorm(arr_1, arr_2, keyword=((225, 225), (-225, -225)))
+    
+    Note
+    -----
+    Both object frame and sky frame should be already dark-subtracted.
+
+    """
+    # Check if the input array is 2D, raise concerns
+    if arr_1.ndim != 2 or arr_2.ndim != 2:
+        raise ValueError("Both inputs must be 2D.")
+
+    if arr_1.shape != arr_2.shape:
+        raise ValueError("Both inputs must have the same shape.")
+
+
+    if keyword is None: 
+        region = arr_1 #Background level of the object frame to scale the normalized sky
+    else:
+        (y1, x1), (y2, x2) = keyword
+        region = arr_1[y1:y2, x1:x2]
+
+
+    if region.size == 0: #Check region
+        raise ValueError("Normalization region is empty.")
+
+    norm_factor = np.median(region)
+
+    if not np.isfinite(norm_factor): #Check
+        raise ValueError("Normalization factor must be finite.")
+
+    denormalized_sky = arr_2 * norm_factor #Apply normalization factor
+    corrected = arr_1 - denormalized_sky 
+
+    return corrected
+
+sky_result = np.zeros_like(objdata_darksub, dtype=float)
+
+# Apply the function to each 2D object frame
+for i in range(nobj):
+    sky_result[i] = skycormednorm(
+        objdata_darksub[i],
+        normmedcomb_result
+    )
+print("Sky-subtracted data shape:", sky_result.shape) #Check full 3D array
+print("Sky-subtracted data shape:", sky_result[-1].shape) #Check 2D last frame
+
+fits.writeto(
+    os.path.join(datadir, "stars_13s_9_nosky.fits"),
+    sky_result[-1], #Save last frame
+    header=objhead,
+    overwrite=True
+)
+print("Last frame pixel [217, 184]:", sky_result[-1, 217, 184])
+
+>>>Sky-subtracted data shape: (9, 1024, 1024)
+Sky-subtracted data shape: (1024, 1024)
+Last frame pixel [217, 184]: -36.76109318273484
+
+3) For stokes:
+ssh ze493669@stokes.ist.ucf.edu and log in.
+
+mkdir hw8_zeinabenton
+cd AST5765_ZeinaBenton
+Git pull
+cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw8_zeinabenton.py hw8_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw8_zeinabenton_supportfunction.py hw8_zeinabenton
+cp -r AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw6_data hw8_zeinabenton/
+cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw6_zeinabenton_supportfunctions.py hw8_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw7_zeinabenton_supportfunction.py hw8_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/practicum5_zeinabenton_supportfunction.py hw8_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw7_synthetic_transit_lightcurve.csv hw8_zeinabenton
+
+	 to run: 
+cd hw8_zeinabenton
+python3 hw8_zeinabenton.py
+Error about version, fix: export OPENBLAS_NUM_THREADS=1
+
+>>>Problem 1, paste practicum 5 work
+Combined image shape: (1024, 1024)
+Normalization factors: [10864. 11057. 10536. 10559. 11046. 10623.  9916.  9916.  9859.]
+Problem 2
+See support file for skycormednorm function
+Sky-subtracted data shape: (9, 1024, 1024)
+Sky-subtracted data shape: (1024, 1024)
+Last frame pixel [217, 184]: -36.76109318273484
+
+Closing out this log now, copying it over to stokes, and then:
+tar zcf hw8_zeinabenton.tar.gz hw8_zeinabenton
+
+*****OUT: Thu Oct 15 16:46:25 EST 2026
+
 
 
 
