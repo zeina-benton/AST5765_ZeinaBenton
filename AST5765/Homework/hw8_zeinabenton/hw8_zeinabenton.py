@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 from hw6_zeinabenton_supportfunctions import median_stack_method
 from hw7_zeinabenton_supportfunction import *
 from practicum5_zeinabenton_supportfunction import *
+from hw8_zeinabenton_supportfunction import skycormednorm
 
 #HW 7
 data = np.loadtxt(
@@ -76,24 +77,29 @@ Normalization factors: [10864. 11057. 10536.
 10559. 11046. 10623.  9916.  9916.  9859.]
 
 """
-fits.writeto(
-    os.path.join(datadir, "sky_13s_mednorm.fits"),
-    normmedcomb_result,
-    header=objhead,
-    overwrite=True
-)
-
-#Check fits file
-saved_data, saved_header = fits.getdata(
-    os.path.join(datadir, "sky_13s_mednorm.fits"),
-    header=True
-)
-print("Shape:", saved_data.shape)  # Expected: (1024, 1024)
-print("Data matches:", np.array_equal(
-    saved_data, normmedcomb_result, equal_nan=True
-))  # Expected: True
 
 
 #New code:
 print("Problem 2")
 print("See support file for skycormednorm function")
+
+sky_result = np.zeros_like(objdata_darksub, dtype=float)
+
+# Apply the function to each 2D object frame
+for i in range(nobj):
+    sky_result[i] = skycormednorm(
+        objdata_darksub[i],
+        normmedcomb_result
+    )
+print("Sky-subtracted data shape:", sky_result.shape) #Check full 3D array
+print("Sky-subtracted data shape:", sky_result[-1].shape) #Check 2D last frame
+
+fits.writeto(
+    os.path.join(datadir, "stars_13s_9_nosky.fits"),
+    sky_result[-1], #Save last frame
+    header=objhead,
+    overwrite=True
+)
+print("Last frame pixel [217, 184]:", sky_result[-1, 217, 184])
+
+# %%

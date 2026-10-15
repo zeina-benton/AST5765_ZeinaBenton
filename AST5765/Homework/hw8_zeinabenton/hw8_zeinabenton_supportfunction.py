@@ -5,7 +5,7 @@
 #%%
 import numpy as np
 
-def skycormednorm(arr_1, arr_2, keyword=True):
+def skycormednorm(arr_1, arr_2, keyword=None):
     """
     This function implements sky subtraction using your normalized sky frame.
     
@@ -57,7 +57,7 @@ def skycormednorm(arr_1, arr_2, keyword=True):
     if not np.isfinite(norm_factor): #Check
         raise ValueError("Normalization factor must be finite.")
 
-    denormalized_sky = arr_2 * norm_factor
-    corrected = arr_1 - denormalized_sky
+    denormalized_sky = arr_2 * norm_factor #Apply normalization factor
+    corrected = arr_1 - denormalized_sky 
 
     return corrected
