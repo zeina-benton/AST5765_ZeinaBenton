@@ -2540,6 +2540,16 @@ fits.writeto(
 
 Now commit to git and add this log over.
 
+
+-
+HW 9 Start
+In local git repo: mkdir hw9_zeinabenton
+			touch hw9_zeinabenton.py
+
+I added Practicum6_zeinabenton folder into this hw9 folder.
+Then at the top of the py file I did: from Practicum6_zeinabenton import *
+
+
 *****OUT: Wed Oct 21 12:43:33 EST 2026
 
 
