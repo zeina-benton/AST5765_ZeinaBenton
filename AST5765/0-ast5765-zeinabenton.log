@@ -2542,18 +2542,123 @@ Now commit to git and add this log over.
 
 
 -
-HW 9 Start
-In local git repo: mkdir hw9_zeinabenton
+HW 9 Start !
+
+1) In local git repo: mkdir hw9_zeinabenton
 			touch hw9_zeinabenton.py
 
 I added Practicum6_zeinabenton folder into this hw9 folder.
 Then at the top of the py file I did: from Practicum6_zeinabenton import *
 
+Stopping before code.
 
 *****OUT: Wed Oct 21 12:43:33 EST 2026
 
 
+*****IN:  Thu Oct 22 11:28:25 EST 2026
+Opened log to continue HW 9 !
 
+
+2)
+from Practicum6_zeinabenton import *
+
+print("HW9, Problem 2")
+import numpy as np
+#Variables
+nstars = 3 #3 stars
+nframes = 3 #3 frames per star
+nparameters = 7 #given in assignment a-g
+
+print("Stellar photometry:")
+print("Parameters: yguess, xguess, star_w, cy, cx, star_flx, sky_avg")
+
+photometry = np.full((nstars, nframes, nparameters), np.nan) #Putting in nan placeholders not 0
+
+for star in range(nstars):
+    print(f"Star {star}:")
+    for frame in range(nframes):
+        print(f"Frame {frame}: {photometry[star, frame]}")
+    print()
+
+"""
+Stellar photometry:
+Parameters: yguess, xguess, star_w, cy, cx, star_flx, sky_avg
+Star 0:
+Frame 0: [nan nan nan nan nan nan nan]
+Frame 1: [nan nan nan nan nan nan nan]
+Frame 2: [nan nan nan nan nan nan nan]
+
+Star 1:
+Frame 0: [nan nan nan nan nan nan nan]
+Frame 1: [nan nan nan nan nan nan nan]
+Frame 2: [nan nan nan nan nan nan nan]
+
+Star 2:
+Frame 0: [nan nan nan nan nan nan nan]
+Frame 1: [nan nan nan nan nan nan nan]
+Frame 2: [nan nan nan nan nan nan nan]
+
+"""
+#Fill in the position of star 0 in the other two frames (guesses)
+# Star 0
+photometry[0, 0, :2] = [838, 714]  # Frame 0
+photometry[0, 1, :2] = [604, 721]  # Frame 1
+photometry[0, 2, :2] = [366, 724]  # Frame 2
+#Note: [nstar, nframe, first 2 params]
+
+# Star 1
+photometry[1, 0, :2] = [327, 713]
+
+# Star 2
+photometry[2, 0, :2] = [492, 399]
+
+
+nstars, nframes, nparameters = photometry.shape #Query table shape for nstars and nframes
+
+#Calculate the offset of star 0 between frames 0 and 1
+offset_01 = photometry[0, 1, :2] - photometry[0, 0, :2]
+
+# Apply that offset to stars 1 and 2
+for star in range(1, nstars):
+    photometry[star, 1, :2] = photometry[star, 0, :2] + offset_01
+
+#Calculate the offset of star 0 between frames 0 and 2 
+offset_02 = photometry[0, 2, :2] - photometry[0, 0, :2]
+
+# Apply that offset to stars 1 and 2
+for star in range(1, nstars):
+    photometry[star, 2, :2] = photometry[star, 0, :2] + offset_02
+
+#Print the updated table
+print("Stellar photometry:")
+print("Parameters: yguess, xguess, star_w, cy, cx, star_flx, sky_avg")
+for star in range(nstars):
+    print(f"\nStar {star}:")
+    print(photometry[star])
+
+"""
+Stellar photometry:
+Parameters: yguess, xguess, star_w, cy, cx, star_flx, sky_avg
+
+Star 0:
+[[838. 714.  nan  nan  nan  nan  nan]
+ [604. 721.  nan  nan  nan  nan  nan]
+ [366. 724.  nan  nan  nan  nan  nan]]
+
+Star 1:
+[[ 327.  713.   nan   nan   nan   nan   nan]
+ [  93.  720.   nan   nan   nan   nan   nan]
+ [-145.  723.   nan   nan   nan   nan   nan]]
+
+Star 2:
+[[492. 399.  nan  nan  nan  nan  nan]
+ [258. 406.  nan  nan  nan  nan  nan]
+ [ 20. 409.  nan  nan  nan  nan  nan]]
+"""
+
+I took guesses using fits reader SaoDS9.
+
+3) I added the gaussian.py file to this folder.
 
 
 
