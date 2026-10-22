@@ -50,9 +50,8 @@ print ("HW 8, Problem 2, part a")
 import os
 
 #Problem calls the use of k_lampon and k_lampoff data
-from hw8_zeinabenton import *
-from hw8_zeinabenton.hw6_zeinabenton_supportfunctions import median_stack_method
-
+from .hw8_zeinabenton.hw6_zeinabenton_supportfunctions import median_stack_method
+from .hw8_zeinabenton.hw8_zeinabenton import sky_result, objhead
 flatdir = "hw8_zeinabenton/hw6_data/" #directory
 
 lampon_files = [] #Create list to order the files
