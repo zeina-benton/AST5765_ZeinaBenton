@@ -52,7 +52,11 @@ import os
 #Problem calls the use of k_lampon and k_lampoff data
 from .hw8_zeinabenton.hw6_zeinabenton_supportfunctions import median_stack_method
 from .hw8_zeinabenton.hw8_zeinabenton import sky_result, objhead
-flatdir = "hw8_zeinabenton/hw6_data/" #directory
+flatdir = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "hw8_zeinabenton",
+    "hw6_data"
+) #ADDED
 
 lampon_files = [] #Create list to order the files
 lampoff_files = []
@@ -90,7 +94,7 @@ print("Flat pixel [217, 184]:", flat[217, 184]) #Answer: 1.0277844426316043
 
 
 print ("HW8, Problem 2, part b")
-from hw8_zeinabenton.hw8_zeinabenton import sky_result, objhead
+
 
 flat_corrected = np.full_like(sky_result, np.nan, dtype=float)
 np.divide( #With only primt(flat_corrected[:, 217, 184])), it gave error for indivisible by 0

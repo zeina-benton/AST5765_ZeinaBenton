@@ -15,16 +15,23 @@ from .practicum5_zeinabenton_supportfunction import *
 from .hw8_zeinabenton_supportfunction import skycormednorm
 
 #HW 7
-data = np.loadtxt(
-    "hw8_zeinabenton/hw7_synthetic_transit_lightcurve.csv",
-    delimiter=",",
-    skiprows=1  # Skip the header
-)
-time = data[:, 0]  # First column: time in days
-flux = data[:, 1]  # Second column: normalized flux
+hw8dir = os.path.dirname(os.path.abspath(__file__))
+datadir = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "hw6_data"
+) + os.sep #ADDED
 
+
+
+data = np.loadtxt(
+    os.path.join(hw8dir, "hw7_synthetic_transit_lightcurve.csv"),
+    delimiter=",",
+    skiprows=1
+)
+time = data[:, 0]
+flux = data[:, 1] #ADDED
 #HW 6
-datadir = "hw8_zeinabenton/hw6_data/"#This is the path to the data directory
+
 fext = ".fits" #This is the file extension of the data files
 objprefix = "rdpharocor_stars_13s_" #Prefix for the object images for fits compliant
 darkprefix = "rdpharocor_dark_13s_" #Prefix for the dark images for fits compliant
