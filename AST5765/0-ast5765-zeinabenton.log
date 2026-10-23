@@ -2836,30 +2836,26 @@ ssh ze493669@stokes.ist.ucf.edu
 mkdir hw9_zeinabenton
 cd AST5765_ZeinaBenton
 Git pull
-cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/hw9_zeinabenton.py hw9_zeinabenton
-cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw8_zeinabenton_supportfunction.py hw8_zeinabenton
-cp -r AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw6_data hw8_zeinabenton/
-cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw6_zeinabenton_supportfunctions.py hw8_zeinabenton
-cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw7_zeinabenton_supportfunction.py hw8_zeinabenton
-cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/practicum5_zeinabenton_supportfunction.py hw8_zeinabenton
-cp AST5765_ZeinaBenton/AST5765/Homework/hw8_zeinabenton/hw7_synthetic_transit_lightcurve.csv hw8_zeinabenton
+cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/hw9_zeinabenton.py hw9_zeinabenton/
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/gaussian.py hw9_zeinabenton/
+
+cp -r AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/Practicum6_zeinabenton hw9_zeinabenton/
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/disktest.fits hw9_zeinabenton/
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/flat.fits hw9_zeinabenton/
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/stars_13s_9_flat.fits hw9_zeinabenton/
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw9_zeinabenton/0-ast5765-zeinabenton.log
 
 	 to run: 
-cd hw8_zeinabenton
-python3 hw8_zeinabenton.py
+cd hw9_zeinabenton
+python3 hw9_zeinabenton.py
 Error about version, fix: export OPENBLAS_NUM_THREADS=1
 
->>>Problem 1, paste practicum 5 work
-Combined image shape: (1024, 1024)
-Normalization factors: [10864. 11057. 10536. 10559. 11046. 10623.  9916.  9916.  9859.]
-Problem 2
-See support file for skycormednorm function
-Sky-subtracted data shape: (9, 1024, 1024)
-Sky-subtracted data shape: (1024, 1024)
-Last frame pixel [217, 184]: -36.76109318273484
-
-Closing out this log now, copying it over to stokes, and then:
-tar zcf hw8_zeinabenton.tar.gz hw8_zeinabenton
+tar zcf hw9_zeinabenton.tar.gz hw9_zeinabenton
 
 *****OUT:  Thu Oct 22 21:10:57 EST 2026
 
