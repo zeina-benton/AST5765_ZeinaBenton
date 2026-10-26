@@ -2859,6 +2859,17 @@ tar zcf hw9_zeinabenton.tar.gz hw9_zeinabenton
 
 *****OUT:  Thu Oct 22 21:10:57 EST 2026
 
+*****IN: Mon Oct 26 14:35:21 
+Working on photometry demo, helps with HW10.
 
+Reading time and photon in txt file.
+Choosing sky aperture and sky annulus: judgment call, optimal apture size is best S/N, establish sigma with a bright star, use gaussian.fitgaussian() 
+	Count DN (light) within 3-4 sigma from center of star, count DN in sky annulus farther out, we want more sky pixels than aperture pixels for better S/N
+	Don't count bad pixels, make a hole in the mask FOR STAR not sky
+
+!*** 3M method: make and multiply masks: cut out area 10sigma or more, find PSF center, make mask of annulus and aperture same size, multiply by image (zero out pixels not being counted), sum masked image for fluxes/sum make for area (# of pixels), make annulus mask with 2 cocentric disk masks and subtract, multiply annuls mask by cut out image bad pixel mask to avoid bad pixels, mask other stars in annulus, ensure no other stars in circle
+	Note don't use pi+r^2, are by counting pixels
+
+*****OUT: Mon Oct 26 15:21:07 EST 2026
 
 
