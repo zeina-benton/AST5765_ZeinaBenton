@@ -2873,3 +2873,22 @@ Choosing sky aperture and sky annulus: judgment call, optimal apture size is bes
 *****OUT: Mon Oct 26 15:21:07 EST 2026
 
 
+*****IN:  Wed Oct 28 09:51:31  EST 2026
+Ogliore in class today subbing in.
+
+Calculating product of expectation values:
+E(z)E(1/z) = summation zi*p(zi) * summation (1/Z_star(p(z_star))
+          = z1*pi(z)+z2p(z2) +.... (1/z1*pz1+1/z2*p(z2)+....)
+	  = summation( p(zk)^2) + summation(z_m/z_n +z_n/z_m) *p(z_m)p(z_n)
+If equal to 1, then E(z)=1, what we expect
+
+1 = summation(p(z_i)(summation(p(z1)) = summation(p(z_k)^2)+ summation(2* p(z_m)p(z_n)
+
+Also know: Z_m/z_n + Z_n/z_m > 2 therefore E(1/z) must be bigger than 1 *recall these are counts
+So E(1/z) > 1/E(z) [Z is count rate quantity] 
+Therefore E(y/x) = E(y)E(1/x) > E(y)/E(x) *Ratio get is never right, must be corrected bc these have a bias where estimator is too high.
+
+	How would you get the publishable ratio? Either take average of columns or calculate each ratio yi/xi for each cycle and then average.
+
+*****OUT: Wed Oct 28 14:59:42 EST 2026
+
