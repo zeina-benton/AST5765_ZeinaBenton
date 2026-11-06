@@ -3082,7 +3082,9 @@ I then committed work to git and with tar gz zip it to submit after copying over
 *****IN: Fri Nov 6 10:14:02 EST 2026
 Opened log to start HW 10 !
 
-Mkdir hw10_zeinabenton
+1) Mkdir hw10_zeinabenton
 Touch hw10_zeinabenton.py
+
+Then in local gitL: git pull main origin
 
 
