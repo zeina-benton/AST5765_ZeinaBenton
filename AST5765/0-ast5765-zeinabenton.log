@@ -3201,4 +3201,8 @@ It ran! Now copy over log, zip it and move back to local git.
 cp AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/0-ast5765-zeinabenton.log ~/hw10_zeinabenton/
 tar zcf hw10_zeinabenton.tar.gz hw10_zeinabenton
 
+*****OUT:  Fri Nov  6 15:23:20 EST 2026 
+
+
+
 
