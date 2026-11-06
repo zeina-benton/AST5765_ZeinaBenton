@@ -3079,5 +3079,10 @@ I then committed work to git and with tar gz zip it to submit after copying over
 *****OUT: Thu Oct 29 11:57:28 EST 2026
 
 
+*****IN: Fri Nov 6 10:14:02 EST 2026
+Opened log to start HW 10 !
+
+Mkdir hw10_zeinabenton
+Touch hw10_zeinabenton.py
 
 
