@@ -101,7 +101,7 @@ Star 2:
 
 # %%
 print("HW9, Problem 3, Part A")
-import gaussian as g 
+from hw9_zeinabenton import gaussian as g #EDIT
 from astropy.io import fits
 
 #Retrieve flat corrected image and apply to stars
