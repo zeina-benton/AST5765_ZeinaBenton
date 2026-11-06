@@ -3174,5 +3174,31 @@ Will finish later.
 
 *****OUT: Fri Nov 6 12:48:51 est 2026
 
+*****IN: Fri Nov  6 14:01:48
+Finishing HW 10 in stokes.
+
+ Test in stokes:
+ a) logged into stokes via ssh ze493669@stokes.ist.ucf.edu and password.
+ B) mkdir hw7_zeinabenton to make folder.
+ C) I had to do git pull to update my stokes git hub repo.
+	Then I did: 
+cp AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/hw10_zeinabenton_photometry.txt hw10_zeinabenton
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/hw10_zeinabenton.py hw10_zeinabenton
+
+cp -r AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/hw9_zeinabenton hw10_zeinabenton
+
+cp -r AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/practicum7_zeinabenton hw10_zeinabenton
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/disktest.fits hw10_zeinabenton
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/flat.fits hw10_zeinabenton
+ 
+python3 hw10_zeinabenton.py
+
+It ran! Now copy over log, zip it and move back to local git.
+
+cp AST5765_ZeinaBenton/AST5765/Homework/hw10_zeinabenton/0-ast5765-zeinabenton.log ~/hw10_zeinabenton/
+tar zcf hw10_zeinabenton.tar.gz hw10_zeinabenton
 
 
