@@ -1,0 +1,145 @@
+From riccardo@astro.cornell.edu Tue Oct 30 08:16:49 2007
+MIME-Version: 1.0
+Content-type: text/plain; charset=ISO-8859-1
+From: Riccardo Giovanelli <riccardo@astro.cornell.edu>
+Date: Tue, 30 Oct 2007 08:03:32 -0400
+To: jh@physics.ucf.edu
+Subject: Re: permission to use data in a course
+In-Reply-To: <1193717291.6368.532.camel@glup.physics.ucf.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+
+Sure, john, go ahead.best wishes -riccardo
+
+
+Quoting Joe Harrington <jh@physics.ucf.edu>:
+
+> Hi Riccardo,
+> 
+> I taught Astro 234 at Cornell for 2 years, in the springs of 2003 and
+> 2004.  The course had a project in which the students did a basic data
+> analysis and wrote a short paper.  One of the projects was a galactic
+> spectrum, from which the students derived a rotation curve and estimated
+> a mass.  You contributed the images for this project.
+> 
+> I'm now teaching a course that is quite similar to Astro 234, and I'd
+> like to ask your permission to use the same images for the project in
+> this course and future courses I might teach.  The images are:
+> 
+> bs324n.fits  bs329n.fits  bs334n.fits  bs339n.fits  bs395n.fits  bs421n.fits
+> bs325n.fits  bs330n.fits  bs335n.fits  bs340n.fits  bs397n.fits  bs422n.fits
+> bs326n.fits  bs331n.fits  bs336n.fits  bs341n.fits  bs418n.fits  bs423n.fits
+> bs327n.fits  bs332n.fits  bs337n.fits  bs342n.fits  bs419n.fits
+> bs328n.fits  bs333n.fits  bs338n.fits  bs343n.fits  bs420n.fits
+> 
+> I've appended one of their headers, below.  Please let me know whether I
+> may use the data for my classes.  Thanks, and I hope all is well in
+> Ithaca.
+> 
+> Thanks,
+> 
+> --jh--
+> Prof. Joseph Harrington
+> Department of Physics
+> MAP 420
+> University of Central Florida
+> Orlando, FL 32816-2385
+> (407) 823-3416 voice
+> (407) 823-5112 fax
+> (407) 823-2325 physics office
+> jh@physics.ucf.edu
+> 
+> SIMPLE  =                    T / Fits standard                               
+>   
+> BITPIX  =                   16 / Bits per pixel                              
+>   
+> NAXIS   =                    2 / Number of axes                              
+>   
+> NAXIS1  =                 1024 / Axis length                                 
+>   
+> NAXIS2  =                  280 / Axis length                                 
+>   
+> EXTEND  =                    F / File may contain extensions                 
+>   
+> ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 1999' / FITS file originator     
+>   
+> DATE    = '2001-04-10T20:38:00' / Date FITS file was generated               
+>   
+> IRAF-TLM= '15:28:39 (10/04/2001)' / Time of last modification                
+>   
+> DATE-OBS= '19-APR-1999       ' /                                             
+>   
+> OBJECT  = 'HD182572'           /                                             
+>   
+> NIGHT   =                    5 /                                             
+>   
+> FRAME   =                  420 /                                             
+>   
+> FILTER  = 'NONE              ' /                                             
+>   
+> ERASE   =         5.635265E+03 /                                             
+>   
+> DEWAR   =                   21 /                                             
+>   
+> CHIP    = '1396CR14-0        ' /                                             
+>   
+> EXPTIME =         1.020000E+00 /                                             
+>   
+> AIRMASS =         1.091498E+00 /                                             
+>   
+> EPOCH   =                 2000 /                                             
+>   
+> CCDTEMP =        -1.199000E+02 /                                             
+>   
+> OBSERVER= 'Giovanelli,Catinella'                                             
+>   
+> OBSERVAT= 'Palomar '           /                                             
+>   
+> INSTRUME= 'Double Spectrograph'    /                                         
+>   
+> TELESCOP= 'P200    '           /                                             
+>   
+> FILENAME= 'BS420N.DST        ' /                                             
+>   
+> IRAFNAME= 'BS420N            ' /                                             
+>   
+> DEC     = '+11:56:39.9       ' /                                             
+>   
+> RA      = '19:24:55.59       ' /                                             
+>   
+> UT      = '12:39:44.6        ' /                                             
+>   
+> HA      = '-0:43:54.1        ' /                                             
+>   
+> LST     = '18:40:58.9        ' /                                             
+>   
+> CRVAL1  =  1.0000000000000E+00 /                                             
+>   
+> CDELT1  =  1.0000000000000E+00 /                                             
+>   
+> CRPIX1  =         1.000000E+00 /                                             
+>   
+> CTYPE1  = 'COLUMN #          ' /                                             
+>   
+> CRVAL2  =  1.0000000000000E+00 /                                             
+>   
+> CDELT2  =  1.0000000000000E+00 /                                             
+>   
+> CRPIX2  =         1.000000E+00 /                                             
+>   
+> CTYPE2  = 'ROW #             ' /                                             
+>   
+> CAMERA  = 'red     '                                                         
+>   
+> DISPAXIS=                    1                                               
+>   
+> CCDSCALE=                0.468                                               
+>   
+>                                   
+> 
+
+
+
+
+-------------------------------------------------
+This mail sent through IMP: http://horde.org/imp/

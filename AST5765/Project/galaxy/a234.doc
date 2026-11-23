@@ -1,0 +1,19 @@
+
+
+The files in this directory are for Steve Eikenberry's use in Astro 234.
+They are fits files of images obtained in Apr'99 using the red camera
+of the DBS on the Hale 5m telescope. All frames have been bias-subtracted.
+
+Frame #   (fits files are named bsNNN.fits where NNN is the frame number)
+
+324-333   dome flats
+334-343   bias frames (zero integration)
+
+418-422   HD182572 (radial velocity standard, used for S-distortion)
+423       NeAr lamp spectrum associated with HD star
+
+397       600 sec exposure of the galaxy UGC 9039
+395       NeAr lamp spectrum associated with UGC 9039
+
+Red camera   1200 l/mm   2"slit   tilt angle=43d10'
+
