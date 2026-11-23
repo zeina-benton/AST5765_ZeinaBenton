@@ -3209,6 +3209,62 @@ Opened log to begin final project ! **
 
 1) Write interpolation and sub-pixel shifting routine. 
 
+I did mkdir project_zeinabenton folder and download necessary data.
+Then touch project_zeinabenton.py and touch project_zeinabenton_supportfunctions.py .
 
+Code for Pr1:
+import numpy as np
+import gaussian as g
+from project_zeinabenton_supportfunctions import splinterp
+
+print("Problem 1")
+
+mag = 5.0
+lo = -2.0
+hi = 2.0
+shift = -0.2
+
+xold = np.linspace(lo, hi, int(np.round(hi - lo + 1)))
+xnew = np.linspace(lo, hi, int(np.round((hi - lo) * mag + 1))) + shift
+
+yold = g.gaussian(xold)
+ynew = splinterp(xnew, xold, yold)
+print(ynew)
+
+And in the definition file:
+def splinterp(xnew, xold, yold):
+    """
+    Evaluate a cubic spline through the original data at xnew.
+
+    Parameters
+    ----------
+    xnew : array_like
+        The x-coordinates at which to evaluate the spline.
+    xold : array_like
+        The x-coordinates of the original data points.
+    yold : array_like
+        The y-coordinates of the original data points.
+    
+    Returns
+    -------
+    array_like
+        The y-coordinates of the spline evaluated at xnew.
+    
+    Example
+    -------
+    >>> xold = np.array([-2.0, -1.0, 0.0, 1.0, 2.0])
+    >>> yold = np.array([0.1353, 0.6065, 1.0, 0.6065, 0.1353])
+    >>> xnew = np.array([-1.5, -0.5, 0.5, 1.5])
+    >>> splinterp(xnew, xold, yold)
+    array([0.3247, 0.7788, 0.7788, 0.3247])
+    
+    """
+    
+    spline = CubicSpline(xold, yold, extrapolate=True)
+    return spline(xnew)
+
+Pausing.
+
+*****OUT:  Mon Nov 23 13:42:58 EST 2026
 
 
